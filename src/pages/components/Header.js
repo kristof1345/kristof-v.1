@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { BsSun, BsMoon } from "react-icons/bs";
 
-// If loading a variable font, you don't need to specify the font weight
-
 export default function Header({ theme, toggleTheme }) {
   return (
     <header className={`${theme}`}>
