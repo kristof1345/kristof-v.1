@@ -203,3 +203,55 @@ footer {
     border-radius: 50%;
   }
 }
+
+@media (max-width: 600px) {
+  header {
+    padding: 0 15px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      flex-basis: 50%;
+      text-align: end;
+    }
+
+    .theme-toggle {
+      flex-basis: 5%;
+    }
+  }
+
+  .index-main {
+    display: flex;
+    flex: 1 1 auto;
+
+    .welcomer {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 5rem;
+        background: -webkit-linear-gradient(#535353, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+      }
+
+      .darkh1 {
+        background: -webkit-linear-gradient(#a0a0a0, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
