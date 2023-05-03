@@ -1,10 +1,65 @@
-// body {
-//   background-color: Canvas;
-//   color: CanvasText;
-//   color-scheme: light dark;
-// }
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  transition: 200ms;
+}
+
+$font1: raleway, system-ui;
+
+.dark {
+  background-color: black;
+  color: white !important;
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 110px;
+  justify-content: space-between;
+  font-family: $font1;
+
+  .logo {
+    flex-basis: 20%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+
+  nav {
+    justify-self: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .theme-toggle {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+  }
+}
+
+.index-main {
+  height: 100vh;
 }
