@@ -1,20 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  transition: 200ms;
-}
 
 $font1: raleway, system-ui;
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font1;
+  transition: 200ms;
+}
+
 .dark {
-  background-color: black;
-  color: white !important;
+  background-color: #191919;
+  color: #c1c1c1;
 }
 
 .light {
-  color: black;
+  color: #5b5b5b;
   background-color: white;
+}
+
+.lightlogo {
+  color: #000000;
+}
+
+.darklogo {
+  color: #ffffff;
+}
+
+.dark-divider {
+  border: 0.5px dashed #414141;
+  width: 1000px;
+  margin-bottom: 12px;
+}
+
+.divider {
+  border: 0.5px dashed #ececec;
+  width: 1000px;
+  margin-bottom: 12px;
 }
 
 body {
@@ -30,7 +52,6 @@ header {
   height: 60px;
   padding: 0 110px;
   justify-content: space-between;
-  font-family: $font1;
 
   .logo {
     flex-basis: 20%;
@@ -61,5 +82,43 @@ header {
 }
 
 .index-main {
-  height: 100vh;
+  display: flex;
+  height: 82vh;
+
+  .welcomer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 5rem;
+      background: -webkit-linear-gradient(#535353, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+    }
+
+    .darkh1 {
+      background: -webkit-linear-gradient(#a0a0a0, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 10vh;
+  font-size: 1.5rem;
 }

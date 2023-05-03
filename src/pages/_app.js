@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import "@/styles/globals.scss";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState("light");
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Component {...pageProps} theme={theme} />
+      <Footer theme={theme} />
     </>
   );
 }

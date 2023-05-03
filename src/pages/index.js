@@ -10,7 +10,20 @@ export default function Home({ theme }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href={relImage.src} />
       </Head>
-      <main className={`index-main ${theme}`}></main>
+      <main className={`index-main ${theme}`}>
+        <div className="welcomer">
+          {theme === "dark" ? (
+            <h1 className="darkh1">Kristof’s Journal</h1>
+          ) : (
+            <h1>Kristof’s Journal</h1>
+          )}
+          <div className={theme === "light" ? "divider" : "dark-divider"} />
+          <p>
+            My ideas and thoughts about web development, programming and self
+            improvement
+          </p>
+        </div>
+      </main>
     </>
   );
 }
