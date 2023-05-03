@@ -9,6 +9,16 @@ $font1: raleway, system-ui;
   transition: 200ms;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
 .dark {
   background-color: #191919;
   color: #c1c1c1;
@@ -28,22 +38,22 @@ $font1: raleway, system-ui;
 }
 
 .dark-divider {
-  border: 0.5px dashed #414141;
+  border: none;
+  border-top: 0.5px dashed #414141;
   width: 1000px;
   margin-bottom: 12px;
 }
 
 .divider {
-  border: 0.5px dashed #ececec;
+  border: none;
+  border-top: 0.5px dashed #ececec;
   width: 1000px;
   margin-bottom: 12px;
 }
 
 body {
   background-color: white;
-  width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 header {
@@ -83,7 +93,7 @@ header {
 
 .index-main {
   display: flex;
-  height: 82vh;
+  flex: 1 1 auto;
 
   .welcomer {
     display: flex;
@@ -110,6 +120,68 @@ header {
       font-size: 1.4rem;
       font-weight: 400;
       padding-bottom: 30px;
+    }
+  }
+}
+
+.light-grad {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.dark-grad {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #191919);
+}
+
+.articles-main {
+  flex: 1 1 auto;
+
+  .articles-holder {
+    margin: 5px 380px 0 380px;
+    padding: 15px 0 10px 0;
+    // min-height: 81vh;
+    border-left: 0.8px dashed #414141;
+
+    .articles {
+      article {
+        margin: 0 0 30px 0;
+        padding: 0 0 5px 50px;
+        border-bottom: 0.8px dashed #414141;
+        position: relative;
+        .article-content {
+          div {
+            font-size: 0.8rem;
+            margin-bottom: 2px;
+            font-weight: 500;
+            opacity: 0.7;
+          }
+          a {
+            display: block;
+            overflow: hidden;
+            width: 90%;
+            text-decoration: none;
+            h4 {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -17,7 +17,7 @@ export default function Home({ theme }) {
           ) : (
             <h1>Kristof’s Journal</h1>
           )}
-          <div className={theme === "light" ? "divider" : "dark-divider"} />
+          <hr className={theme === "light" ? "divider" : "dark-divider"} />
           <p>
             My ideas and thoughts about web development, programming and self
             improvement
