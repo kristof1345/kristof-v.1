@@ -167,8 +167,9 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
                 5. Tutorial hell
               </h2>
               <p>
-                You've likely heard of the term "tutorial hell" before. It's one
-                of the biggest mistakes you can make when learning to code.
+                You&apos;ve likely heard of the term &quot;tutorial hell&quot;
+                before. It&apos;s one of the biggest mistakes you can make when
+                learning to code.
               </p>
               <p>
                 Tutorial hell looks something like this: You start out learning
