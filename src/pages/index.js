@@ -4,7 +4,7 @@ export default function Home({ theme }) {
   return (
     <>
       <NextSeo
-        title="Kristof’s Journal"
+        title="Kristof's Journal"
         description="My ideas and thoughts about web development, programming and self
             improvement"
         canonical="www.example.com"
@@ -15,9 +15,9 @@ export default function Home({ theme }) {
       <main className={`index-main ${theme}`}>
         <div className="welcomer">
           {theme === "dark" ? (
-            <h1 className="darkh1">Kristof’s Journal</h1>
+            <h1 className="darkh1">Kristof&apos;s Journal</h1>
           ) : (
-            <h1>Kristof’s Journal</h1>
+            <h1>Kristof&apos;s Journal</h1>
           )}
           <hr className={theme === "light" ? "divider" : "dark-divider"} />
           <p>

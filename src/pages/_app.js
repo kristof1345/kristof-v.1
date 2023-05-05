@@ -19,14 +19,14 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Kristof’s Journal"
+        title="Kristof's Journal"
         description="My ideas and thoughts about web development, programming and self
             improvement"
         openGraph={{
           type: "website",
           locale: "en_IE",
           url: "https://www.url.ie/",
-          siteName: "Kristof’s Journal",
+          siteName: "Kristof's Journal",
         }}
         twitter={{
           handle: "@kristf_nemeth",
