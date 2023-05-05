@@ -7,9 +7,9 @@ export default function Home({ theme }) {
         title="Kristof's Journal"
         description="My ideas and thoughts about web development, programming and self
             improvement"
-        canonical="www.example.com"
+        canonical="https://kristof.vercel.app/"
         openGraph={{
-          url: "www.example.com/next-seo-blog",
+          url: "https://kristof.vercel.app/",
         }}
       />
       <main className={`index-main ${theme}`}>

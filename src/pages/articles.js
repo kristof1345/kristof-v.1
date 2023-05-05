@@ -6,11 +6,10 @@ export default function Articles({ theme }) {
     <>
       <NextSeo
         title="Kristof's Journal - Articles"
-        description="My ideas and thoughts about web development, programming and self
-            improvement"
-        canonical="www.example.com"
+        description="My Articles, about web development, programming, self improvement and much more"
+        canonical="https://kristof.vercel.app/"
         openGraph={{
-          url: "www.example.com/next-seo-blog",
+          url: "https://kristof.vercel.app/articles/",
           siteName: "Kristof's Journal - Articles",
         }}
       />

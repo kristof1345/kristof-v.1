@@ -25,12 +25,12 @@ export default function App({ Component, pageProps }) {
         openGraph={{
           type: "website",
           locale: "en_IE",
-          url: "https://www.url.ie/",
+          url: "https://kristof.vercel.app/",
           siteName: "Kristof's Journal",
         }}
         twitter={{
           handle: "@kristf_nemeth",
-          site: "myawesomewebsite.com",
+          site: "kristof.vercel.app",
           cardType: "summary",
         }}
         additionalLinkTags={[

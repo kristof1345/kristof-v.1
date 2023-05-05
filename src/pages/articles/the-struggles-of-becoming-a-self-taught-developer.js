@@ -13,7 +13,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
           article: {
             publishedTime: "2023-05-05T09:013:13Z",
           },
-          url: "www.example.com/next-seo-blog",
+          url: "https://kristof.vercel.app/articles/the-struggles-of-becoming-a-self-taught-developer",
           siteName: "The Struggles of Becoming a Self Thaught Developer",
         }}
       />
