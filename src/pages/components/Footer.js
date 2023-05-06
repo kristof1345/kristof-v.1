@@ -8,6 +8,7 @@ export default function Footer({ theme }) {
       <Link
         href="https://github.com/kristof1345"
         target="_blank"
+        aria-label="Github"
         className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsGithub />
@@ -15,6 +16,7 @@ export default function Footer({ theme }) {
       <Link
         href="https://twitter.com/kristf_nemeth"
         target="_blank"
+        aria-label="Twitter"
         className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsTwitter />
@@ -22,6 +24,7 @@ export default function Footer({ theme }) {
       <Link
         href="https://www.instagram.com/kcoder.blog/"
         target="_blank"
+        aria-label="Instagram"
         className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsInstagram />
@@ -29,6 +32,7 @@ export default function Footer({ theme }) {
       <Link
         href="https://dev.to/kristof1345"
         target="_blank"
+        aria-label="Dev Community"
         className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <FaDev />
