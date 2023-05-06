@@ -9,6 +9,11 @@ $font1: raleway, system-ui;
   transition: 200ms;
 }
 
+// ::selection {
+//   background-color: rgb(173, 255, 247);
+//   // color: #ffffff;
+// }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -105,6 +110,7 @@ header {
       font-size: 5rem;
       background: -webkit-linear-gradient(#535353, #000000);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 900;
     }
@@ -112,6 +118,7 @@ header {
     .darkh1 {
       background: -webkit-linear-gradient(#a0a0a0, #ffffff);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
