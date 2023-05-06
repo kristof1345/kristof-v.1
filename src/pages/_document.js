@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Image from "next/image";
 
 export default function Document() {
   return (
@@ -11,7 +12,9 @@ export default function Document() {
           <div>
             <img
               src="https://mc.yandex.ru/watch/93490260"
-              style="position:absolute; left:-9999px;"
+              style={{ position: "absolute", left: "-9999px" }}
+              width={5}
+              height={5}
               alt=""
             />
           </div>
