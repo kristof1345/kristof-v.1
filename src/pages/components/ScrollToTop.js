@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import { SlArrowUp } from "react-icons/sl";
 
 const ScrollToTop = ({ theme }) => {
-  const [showTopBtn, setShowTopBtn] = useState(false);
+  // const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      let el = document.querySelector(".back-to-top");
       if (window.scrollY > 400) {
-        setShowTopBtn(true);
+        el.style.opacity = 1;
       } else {
-        setShowTopBtn(false);
+        el.style.opacity = 0;
       }
     });
   }, []);
@@ -22,14 +23,14 @@ const ScrollToTop = ({ theme }) => {
   };
   return (
     <>
-      {showTopBtn && (
-        <button
-          className={`back-to-top ${theme === "light" ? "dark" : "light"}`}
-          onClick={goToTop}
-        >
-          <SlArrowUp />
-        </button>
-      )}
+      {/* {showTopBtn && ( */}
+      <button
+        className={`back-to-top ${theme === "light" ? "dark" : "light"}`}
+        onClick={goToTop}
+      >
+        <SlArrowUp />
+      </button>
+      {/* )} */}
     </>
   );
 };
