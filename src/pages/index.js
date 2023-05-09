@@ -21,8 +21,8 @@ export default function Home({ theme }) {
           )}
           <hr className={theme === "light" ? "divider" : "dark-divider"} />
           <p>
-            If you don't care about web development or self improvement just
-            forget about this website
+            If you don&apos;t care about web development or self improvement
+            just forget about this website
           </p>
         </div>
       </main>
