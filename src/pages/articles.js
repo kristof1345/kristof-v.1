@@ -15,6 +15,16 @@ export default function Articles({ theme }) {
       />
       <main className={`articles-main ${theme}`}>
         <div className="articles-holder">
+          <div
+            className={`grad-top ${
+              theme === "light" ? "light-top" : "dark-top"
+            }`}
+          />
+          <div
+            className={`grad-bottom ${
+              theme === "light" ? "light-bottom" : "dark-bottom"
+            }`}
+          />
           <div className="articles">
             <article>
               <div className={theme === "light" ? "light-grad" : "dark-grad"} />

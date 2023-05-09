@@ -24,6 +24,33 @@ $font1: raleway, system-ui;
   flex-flow: column;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
 .dark {
   background-color: #191919;
   color: #c1c1c1;
@@ -51,7 +78,7 @@ $font1: raleway, system-ui;
 
 .divider {
   border: none;
-  border-top: 0.5px dashed #dfdfdf;
+  border-top: 0.5px dashed #d2d1d1;
   width: 1000px;
   margin-bottom: 12px;
 }
@@ -82,9 +109,16 @@ header {
     letter-spacing: 0.05em;
   }
 
+  h2:hover {
+    opacity: 0.6;
+  }
+
   nav {
     font-size: 1.3rem;
     font-weight: 600;
+    a:hover {
+      opacity: 0.8;
+    }
   }
 
   .theme-toggle {
@@ -152,6 +186,27 @@ header {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #191919);
 }
 
+.dark-top {
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #191919);
+}
+.light-top {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+.dark-bottom {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #191919);
+}
+.light-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
 .articles-main {
   flex: 1 1 auto;
   padding: 0 20px;
@@ -161,13 +216,30 @@ header {
     margin: auto;
     max-width: 770px;
     padding: 15px 0 10px 0;
-    border-left: 0.8px dashed #414141;
+    border-left: 0.8px dashed #d2d1d1; //#414141
+    position: relative;
+
+    .grad-top {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      width: 2px;
+      height: 35px;
+    }
+    .grad-bottom {
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      width: 2px;
+      height: 30px;
+    }
 
     .articles {
       article {
         margin: 0 0 30px 0;
         padding: 0 0 5px 50px;
-        border-bottom: 0.8px dashed #414141;
+        border-bottom: 0.8px dashed #d2d1d1;
         position: relative;
         .article-content {
           div {
@@ -182,6 +254,10 @@ header {
             text-decoration: none;
             h4 {
               font-size: 1.2rem;
+              margin-bottom: 3px;
+            }
+            h4:hover {
+              opacity: 0.5;
             }
           }
         }
@@ -199,14 +275,22 @@ header {
     margin: auto;
 
     .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       h1 {
         font-size: 2.3rem;
         line-height: 1.27;
       }
+      span {
+        font-weight: 700;
+        font-size: 1.1rem;
+        opacity: 0.65;
+      }
     }
 
     .article-contents {
-      margin-top: 60px;
+      margin-top: 50px;
 
       h3 {
         font-size: 1.5rem;
@@ -255,6 +339,9 @@ footer {
     height: 40px;
     border-radius: 50%;
   }
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 600px) {
@@ -263,7 +350,7 @@ footer {
   }
 
   .divider {
-    width: 330px;
+    width: 90%;
   }
 
   header {
@@ -288,13 +375,14 @@ footer {
   .index-main {
     .welcomer {
       h1 {
-        font-size: 2.3rem;
+        // font-size: 2.3rem;
+        font-size: 10.8vw;
         margin-bottom: 5px;
       }
 
       p {
         font-size: 1.1rem;
-        padding: 0 8px 40px 8px;
+        padding: 0 8px 20px 8px;
         text-align: center;
       }
     }
@@ -327,11 +415,16 @@ footer {
   .article-main {
     div {
       padding: 45px 15px 20px 15px;
+      .intro {
+        span {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
   footer {
-    height: 60px;
+    height: 80px;
   }
 }
 
@@ -341,7 +434,7 @@ footer {
   }
 
   .divider {
-    width: 280px;
+    width: 90%;
   }
 
   header {
@@ -366,13 +459,12 @@ footer {
   .index-main {
     .welcomer {
       h1 {
-        font-size: 1.8rem;
         margin-bottom: 5px;
       }
 
       p {
         font-size: 1rem;
-        padding: 0 8px 40px 8px;
+        padding: 0 8px 20px 8px;
         text-align: center;
       }
     }
@@ -429,8 +521,8 @@ footer {
   }
 
   footer {
-    height: 60px;
     padding: 0 20px;
+    height: 65px;
     a {
       font-size: 1.25rem;
     }
