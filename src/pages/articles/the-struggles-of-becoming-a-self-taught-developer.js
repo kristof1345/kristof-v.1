@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import ScrollToTop from "../components/scrollToTop";
+import ScrollToTop from "../components/ScrollToTop";
 
 const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
   return (
@@ -18,8 +18,8 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
         }}
       />
       <main className={`article-main ${theme}`}>
-        <ScrollToTop />
-        <div>
+        <ScrollToTop theme={theme} />
+        <div className="article-holder">
           <section className={`intro`}>
             <h1 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
               The Struggles of Becoming a Self Thaught Developer

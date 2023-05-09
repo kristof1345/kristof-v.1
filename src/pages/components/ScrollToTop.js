@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SlArrowUp } from "react-icons/sl";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ theme }) => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -21,13 +21,16 @@ const ScrollToTop = () => {
     });
   };
   return (
-    <div>
+    <>
       {showTopBtn && (
-        <button className="back-to-top" onClick={goToTop}>
+        <button
+          className={`back-to-top ${theme === "light" ? "dark" : "light"}`}
+          onClick={goToTop}
+        >
           <SlArrowUp />
         </button>
       )}
-    </div>
+    </>
   );
 };
 
