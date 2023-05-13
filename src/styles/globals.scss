@@ -9,11 +9,6 @@ $font1: raleway, system-ui;
   transition: 200ms;
 }
 
-// ::selection {
-//   background-color: rgb(173, 255, 247);
-//   // color: #ffffff;
-// }
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -120,6 +115,9 @@ header {
   }
 
   nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
     font-size: 1.3rem;
     font-weight: 600;
     a:hover {
@@ -329,6 +327,66 @@ header {
   }
 }
 
+.projects-main {
+  flex: 1 1 auto;
+  padding: 0 20px;
+
+  .projects-holder {
+    padding: 20px 0 0 0;
+
+    h1 {
+      text-align: center;
+      font-size: 3.8rem;
+      background: -webkit-linear-gradient(#535353, #000000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+    }
+
+    .darkh1 {
+      background: -webkit-linear-gradient(#a0a0a0, #ffffff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      article {
+        width: 700px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        padding-top: 15px;
+
+        .sec1 {
+          display: flex;
+          gap: 10px;
+
+          .icons {
+            display: flex;
+            gap: 10px;
+            font-size: 2.3rem;
+          }
+
+          a {
+            font-size: 1.2rem;
+            margin-top: 2px;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -434,6 +492,44 @@ footer {
     }
   }
 
+  .projects-main {
+    .projects-holder {
+      padding: 40px 0 0 0;
+
+      h1 {
+        font-size: 9.5vw;
+      }
+
+      .projects {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        article {
+          flex-direction: column;
+          gap: 15px;
+          padding-top: 15px;
+
+          .sec1 {
+            width: 100%;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+
+            .icons {
+              font-size: 7.3vw;
+            }
+
+            a {
+              font-size: 4.7vw;
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   footer {
     height: 80px;
   }
@@ -453,13 +549,13 @@ footer {
     border: none;
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
 
     nav {
       flex-basis: 35%;
       text-align: end;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .theme-toggle {

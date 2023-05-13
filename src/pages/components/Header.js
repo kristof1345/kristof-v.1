@@ -15,6 +15,9 @@ export default function Header({ theme, toggleTheme }) {
         <Link href="/articles" className={theme}>
           articles
         </Link>
+        <Link href="/projects" className={theme}>
+          projects
+        </Link>
       </nav>
       <div
         className={`theme-toggle ${
