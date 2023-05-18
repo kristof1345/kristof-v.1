@@ -29,6 +29,18 @@ export default function Articles({ theme }) {
             <article>
               <div className={theme === "light" ? "light-grad" : "dark-grad"} />
               <div className="article-content">
+                <div className={theme}>MAY 5, 2023</div>
+                <Link
+                  href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
+                  className={theme === "light" ? "lightlogo" : "darklogo"}
+                >
+                  <h4>How to learn way more from coding than ever before</h4>
+                </Link>
+              </div>
+            </article>
+            <article>
+              <div className={theme === "light" ? "light-grad" : "dark-grad"} />
+              <div className="article-content">
                 <div className={theme}>MAY 3, 2023</div>
                 <Link
                   href="/articles/the-struggles-of-becoming-a-self-taught-developer"
