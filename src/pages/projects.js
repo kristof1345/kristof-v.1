@@ -2,7 +2,7 @@ import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { TbBrandGolang, TbBrandNextjs } from "react-icons/tb";
 
-export default function Projects({ theme }) {
+export default function Projects() {
   return (
     <>
       <NextSeo
@@ -14,24 +14,17 @@ export default function Projects({ theme }) {
           siteName: "Kristof's Journal - Projects",
         }}
       />
-      <main className={`projects-main ${theme}`}>
+      <main className={`projects-main`}>
         <div className="projects-holder">
-          {theme === "dark" ? (
-            <h1 className="darkh1">Project&apos;s</h1>
-          ) : (
-            <h1>Project&apos;s</h1>
-          )}
+          <h1>Project&apos;s</h1>
           <section className="projects">
-            <article className={theme === "light" ? "divider" : "dark-divider"}>
+            <article className={"divider"}>
               <section className="sec1">
                 <div className="icons">
                   <TbBrandNextjs />
                   <TbBrandGolang />
                 </div>
-                <Link
-                  href="https://opensourcegrader.vercel.app/"
-                  className={theme}
-                >
+                <Link href="https://opensourcegrader.vercel.app/">
                   opensourcegrader.vercel.app
                 </Link>
               </section>

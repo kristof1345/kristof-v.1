@@ -6,16 +6,6 @@ import { DefaultSeo } from "next-seo";
 import relImage from "../../public/K.png";
 
 export default function App({ Component, pageProps }) {
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
-
   return (
     <>
       <DefaultSeo
@@ -41,9 +31,9 @@ export default function App({ Component, pageProps }) {
           },
         ]}
       />
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Component {...pageProps} theme={theme} />
-      <Footer theme={theme} />
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

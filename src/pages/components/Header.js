@@ -1,32 +1,16 @@
 import Link from "next/link";
 import { BsSun, BsMoon } from "react-icons/bs";
 
-export default function Header({ theme, toggleTheme }) {
+export default function Header() {
   return (
-    <header className={`${theme}`}>
-      <Link className={`logo ${theme}`} href="/">
-        {theme === "light" ? (
-          <h2 className="lightlogo">kristof</h2>
-        ) : (
-          <h2 className="darklogo">kristof</h2>
-        )}
+    <header>
+      <Link href="/">
+        <h2 className="logo">Kristof</h2>
       </Link>
       <nav>
-        <Link href="/articles" className={theme}>
-          articles
-        </Link>
-        <Link href="/projects" className={theme}>
-          projects
-        </Link>
+        <Link href="/articles">Articles</Link>
+        <Link href="/projects">Projects</Link>
       </nav>
-      <div
-        className={`theme-toggle ${
-          theme === "light" ? "lightlogo" : "darklogo"
-        }`}
-        onClick={() => toggleTheme()}
-      >
-        {theme === "light" ? <BsSun /> : <BsMoon />}
-      </div>
     </header>
   );
 }

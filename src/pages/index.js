@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 
-export default function Home({ theme }) {
+export default function Home() {
   return (
     <>
       <NextSeo
@@ -12,19 +12,22 @@ export default function Home({ theme }) {
           url: "https://kristof.vercel.app/",
         }}
       />
-      <main className={`index-main ${theme}`}>
-        <div className="welcomer">
-          {theme === "dark" ? (
-            <h1 className="darkh1">Kristof&apos;s Journal</h1>
-          ) : (
-            <h1>Kristof&apos;s Journal</h1>
-          )}
-          <hr className={theme === "light" ? "divider" : "dark-divider"} />
+      <main className="index-main">
+        <section className="welcomer">
+          <h1>Kristof&apos;s Journal</h1>
+          {/* <hr className="divider" /> */}
           <p>
             If you don&apos;t care about web development or self improvement
             just forget about this website
           </p>
-        </div>
+          <form>
+            <input type="email" placeholder="Your Email" />
+            <button>Coming Soon</button>
+          </form>
+        </section>
+        <section className="recent-articles">
+          <h2>Recent Articles</h2>
+        </section>
       </main>
     </>
   );

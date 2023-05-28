@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
 import ScrollToTop from "../components/ScrollToTop";
 
-const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
+const theStugglesOfBecomingASelfTaughtDeveloper = () => {
   return (
     <>
       <NextSeo
@@ -17,19 +17,15 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
           siteName: "The Struggles of Becoming a Self Thaught Developer",
         }}
       />
-      <main className={`article-main ${theme}`}>
-        <ScrollToTop theme={theme} />
+      <main className={`article-main`}>
+        <ScrollToTop />
         <div className="article-holder">
           <section className={`intro`}>
-            <h1 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-              The Struggles of Becoming a Self Thaught Developer
-            </h1>
-            <span className={theme}>Published May 3, 2023</span>
+            <h1>The Struggles of Becoming a Self Thaught Developer</h1>
+            <span>Published May 3, 2023</span>
           </section>
           <section className={`article-contents`}>
-            <h3 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-              Want to become a web developer?
-            </h3>
+            <h3>Want to become a web developer?</h3>
             <p>Cool, you don&apos;t need a degree for that.</p>
             <p>
               You don&apos;t even need to go through a boot camp or pay for an
@@ -43,9 +39,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               problems self-taught developers face.
             </p>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                1. Learning resources
-              </h2>
+              <h2>1. Learning resources</h2>
               <p>
                 When it comes to learning how to code, the first step is to
                 decide which method of learning is best for you. With so many
@@ -62,9 +56,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                2. Burnout
-              </h2>
+              <h2>2. Burnout</h2>
               <p>
                 Burnout can appear at different times and levels for each
                 individual. It might happen to you too at some point in your
@@ -74,26 +66,14 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               </p>
               <ul>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Having a purpose/vision
-                  </h4>
+                  <h4>Having a purpose/vision</h4>
                   <p>
                     Having a clear purpose or vision in front of you will help
                     you to avoid burnout and push through harder times.
                   </p>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Taking a break
-                  </h4>
+                  <h4>Taking a break</h4>
                   <p>
                     Taking a break when you start to feel burnt out is also
                     beneficial. It allows you to take a step back and look at
@@ -101,13 +81,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
                   </p>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Loving what you do
-                  </h4>
+                  <h4>Loving what you do</h4>
                   <p>
                     If you love to do something, or if you are interested in
                     that thing, it will be way easier to avoid burnout.
@@ -116,9 +90,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               </ul>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                3. Loneliness
-              </h2>
+              <h2>3. Loneliness</h2>
               <p>
                 Loneliness is one of the biggest demons of a self-taught
                 developer. Having friends is great. But if you can&apos;t share
@@ -140,9 +112,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                4. Study methods
-              </h2>
+              <h2>4. Study methods</h2>
               <p>
                 When it comes to learning something on your own, the key is to
                 create a plan and then turn it into a habit. This way, it will
@@ -165,9 +135,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                5. Tutorial hell
-              </h2>
+              <h2>5. Tutorial hell</h2>
               <p>
                 You&apos;ve likely heard of the term &quot;tutorial hell&quot;
                 before. It&apos;s one of the biggest mistakes you can make when

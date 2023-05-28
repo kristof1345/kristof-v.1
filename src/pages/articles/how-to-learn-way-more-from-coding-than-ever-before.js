@@ -17,19 +17,15 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
           siteName: "How to learn way more from coding than ever before",
         }}
       />
-      <main className={`article-main ${theme}`}>
-        <ScrollToTop theme={theme} />
+      <main className={`article-main`}>
+        <ScrollToTop />
         <div className="article-holder">
           <section className={`intro`}>
-            <h1 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-              How to learn way more from coding than ever before
-            </h1>
-            <span className={theme}>Published May 18, 2023</span>
+            <h1>How to learn way more from coding than ever before</h1>
+            <span>Published May 18, 2023</span>
           </section>
           <section className={`article-contents`}>
-            <h3 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-              Want to become a superhero programmer?
-            </h3>
+            <h3>Want to become a superhero programmer?</h3>
             <p>
               As a developer, learning is your superpower. It is especially
               important now that frameworks and new tech emerges every 2 days.
@@ -42,56 +38,24 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
             <div>
               <ul>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Make sure that you understand concepts
-                  </h4>
+                  <h4>Make sure that you understand concepts</h4>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Apply what you learned(Practice)
-                  </h4>
+                  <h4>Apply what you learned(Practice)</h4>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Take notes
-                  </h4>
+                  <h4>Take notes</h4>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Debug
-                  </h4>
+                  <h4>Debug</h4>
                 </li>
                 <li>
-                  <h4
-                    className={`${
-                      theme === "light" ? "lightlogo" : "darklogo"
-                    }`}
-                  >
-                    Find a community
-                  </h4>
+                  <h4>Find a community</h4>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                1. Make sure that you understand the concepts
-              </h2>
+              <h2>1. Make sure that you understand the concepts</h2>
               <p>
                 When learning to code you can&apos;t memorize code, I know
                 because I did it for a long time.
@@ -102,16 +66,14 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
                 But not just what it does but why it does it too.
               </p>
               <p>
-                For example: Take an &qout;if...else&qout; statement or a
-                logical operator like &qout;&&&qout;. Besides understanding what
+                For example: Take an &quot;if...else&quot; statement or a
+                logical operator like &quot;&&&quot;. Besides understanding what
                 it does when you use it in your code, you should look a little
                 deeper and understand why it does that thing.
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                2.Apply what you learned(Practice)
-              </h2>
+              <h2>2.Apply what you learned(Practice)</h2>
               <p>
                 We can all agree, that learning without actually applying the
                 concepts you learned, is just wasting your time. I mean, why did
@@ -125,9 +87,7 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                3. Take notes
-              </h2>
+              <h2>3. Take notes</h2>
               <p>
                 I do this when taking courses, or just generally learning new
                 concepts that I didn&apos;t know about before. And let me tell
@@ -145,9 +105,7 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                4. Debug
-              </h2>
+              <h2>4. Debug</h2>
               <p>
                 The majority of programmers HATE debugging(not that I love it).
                 It is a tedious process and sometimes the problem is just a
@@ -161,9 +119,7 @@ const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
               </p>
             </div>
             <div>
-              <h2 className={`${theme === "light" ? "lightlogo" : "darklogo"}`}>
-                5. Find a community
-              </h2>
+              <h2>5. Find a community</h2>
               <p>
                 Finding and joining a good community can be a little tricky, but
                 it&apos;s definitely worth it. In a community, you can share

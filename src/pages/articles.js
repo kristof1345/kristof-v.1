@@ -13,38 +13,30 @@ export default function Articles({ theme }) {
           siteName: "Kristof's Journal - Articles",
         }}
       />
-      <main className={`articles-main ${theme}`}>
+      <main className={`articles-main `}>
         <div className="articles-holder">
-          <div
-            className={`grad-top ${
-              theme === "light" ? "light-top" : "dark-top"
-            }`}
-          />
-          <div
-            className={`grad-bottom ${
-              theme === "light" ? "light-bottom" : "dark-bottom"
-            }`}
-          />
+          <div className={`grad-top "light-top"`} />
+          <div className={`grad-bottom "light-bottom"`} />
           <div className="articles">
             <article>
-              <div className={theme === "light" ? "light-grad" : "dark-grad"} />
+              <div className={"light-grad"} />
               <div className="article-content">
-                <div className={theme}>MAY 5, 2023</div>
+                <div>MAY 5, 2023</div>
                 <Link
                   href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
-                  className={theme === "light" ? "lightlogo" : "darklogo"}
+                  className={"lightlogo"}
                 >
                   <h4>How to learn way more from coding than ever before</h4>
                 </Link>
               </div>
             </article>
             <article>
-              <div className={theme === "light" ? "light-grad" : "dark-grad"} />
+              <div className={"light-grad"} />
               <div className="article-content">
-                <div className={theme}>MAY 3, 2023</div>
+                <div>MAY 3, 2023</div>
                 <Link
                   href="/articles/the-struggles-of-becoming-a-self-taught-developer"
-                  className={theme === "light" ? "lightlogo" : "darklogo"}
+                  className={"lightlogo"}
                 >
                   <h4>The struggles of becoming a self thaught developer</h4>
                 </Link>

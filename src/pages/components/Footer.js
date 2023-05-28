@@ -2,14 +2,13 @@ import { BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaDev } from "react-icons/fa";
 import Link from "next/link";
 
-export default function Footer({ theme }) {
+export default function Footer() {
   return (
-    <footer className={theme}>
+    <footer>
       <Link
         href="https://github.com/kristof1345"
         target="_blank"
         aria-label="Github"
-        className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsGithub />
       </Link>
@@ -17,7 +16,6 @@ export default function Footer({ theme }) {
         href="https://twitter.com/kristf_nemeth"
         target="_blank"
         aria-label="Twitter"
-        className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsTwitter />
       </Link>
@@ -25,7 +23,6 @@ export default function Footer({ theme }) {
         href="https://www.instagram.com/kcoder.blog/"
         target="_blank"
         aria-label="Instagram"
-        className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <BsInstagram />
       </Link>
@@ -33,7 +30,6 @@ export default function Footer({ theme }) {
         href="https://dev.to/kristof1345"
         target="_blank"
         aria-label="Dev Community"
-        className={`${theme} ${theme === "light" ? "lightlogo" : "darklogo"}`}
       >
         <FaDev />
       </Link>
