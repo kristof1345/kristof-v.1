@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { useState } from "react";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { MdClose } from "react-icons/md";
 
 export default function Header() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <header>
       <Link href="/">
@@ -10,7 +14,15 @@ export default function Header() {
       <nav>
         <Link href="/articles">Articles</Link>
         <Link href="/projects">Projects</Link>
+        <div className="toggle">
+          {!menu ? (
+            <HiMenuAlt3 onClick={() => setMenu((prev) => !prev)} />
+          ) : (
+            <MdClose onClick={() => setMenu((prev) => !prev)} />
+          )}
+        </div>
       </nav>
+      <div className={`dropdown ${menu === true ? "down" : ""}`}>sajdhjk</div>
     </header>
   );
 }

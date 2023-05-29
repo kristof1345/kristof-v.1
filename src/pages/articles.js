@@ -14,13 +14,14 @@ export default function Articles({ theme }) {
         }}
       />
       <main className={`articles-main `}>
+        <h1>Article&apos;s</h1>
         <div className="articles-holder">
-          <div className={`grad-top "light-top"`} />
-          <div className={`grad-bottom "light-bottom"`} />
+          <div className="grad-top" />
+          <div className="grad-bottom" />
           <div className="articles">
             <article>
-              <div className={"light-grad"} />
               <div className="article-content">
+                <div className="timeline"></div>
                 <div>MAY 5, 2023</div>
                 <Link
                   href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
@@ -31,8 +32,8 @@ export default function Articles({ theme }) {
               </div>
             </article>
             <article>
-              <div className={"light-grad"} />
               <div className="article-content">
+                <div className="timeline"></div>
                 <div>MAY 3, 2023</div>
                 <Link
                   href="/articles/the-struggles-of-becoming-a-self-taught-developer"

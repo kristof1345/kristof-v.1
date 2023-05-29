@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,6 +28,29 @@ export default function Home() {
         </section>
         <section className="recent-articles">
           <h2>Recent Articles</h2>
+          <div>
+            <article>
+              <div>MAY 18, 2023</div>
+              <Link
+                href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
+                className="lightlogo"
+              >
+                <h4>How to learn way more from coding than ever before</h4>
+              </Link>
+            </article>
+            <article>
+              <div>MAY 18, 2023</div>
+              <Link
+                href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
+                className="lightlogo"
+              >
+                <h4>How to learn way more from coding than ever before</h4>
+              </Link>
+            </article>
+          </div>
+          <Link href="/articles" className="read-more">
+            Read More Articles
+          </Link>
         </section>
       </main>
     </>

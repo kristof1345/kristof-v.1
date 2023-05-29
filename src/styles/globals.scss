@@ -33,47 +33,8 @@ $fira: "Fira Sans", sans-serif;
   opacity: 0;
 }
 
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
-.dark {
-  background-color: #191919;
-  color: #c1c1c1;
-}
-
-.light {
-  color: #5b5b5b;
-  background-color: white;
-}
-
 .lightlogo {
   color: #000000;
-}
-
-.darklogo {
-  color: #ffffff;
-}
-
-.dark-divider {
-  border: none;
-  border-top: 0.5px dashed #414141;
-  width: 1000px;
-  margin-bottom: 12px;
 }
 
 .divider {
@@ -124,6 +85,10 @@ header {
     justify-content: end;
     font-size: 1.3rem;
     font-weight: 600;
+    .toggle {
+      display: none;
+    }
+
     a {
       color: #ffffff;
     }
@@ -153,8 +118,8 @@ header {
     padding: 0 150px;
 
     h1 {
-      margin-top: 190px;
-      font-size: 7rem;
+      margin-top: 200px;
+      font-size: 8.2vw;
       font-weight: 900;
       background: -webkit-linear-gradient(#c7c7c7, #ffffff);
       -webkit-background-clip: text;
@@ -169,7 +134,7 @@ header {
     p {
       max-width: 700px;
       color: #ffffff;
-      font-size: 1.4rem;
+      font-size: 1.6vw;
       font-weight: 400;
       padding: 25px 0;
     }
@@ -186,7 +151,7 @@ header {
         padding: 15px 20px;
         font-size: 1.1rem;
         color: white;
-        min-width: 400px;
+        min-width: 25vw;
       }
       input:focus {
         outline: none;
@@ -208,106 +173,135 @@ header {
   }
 
   .recent-articles {
-    padding: 60px 150px 10px 150px;
+    padding: 90px 150px 90px 150px;
 
     h2 {
       font-size: 4rem;
       font-family: $merri;
+      margin-bottom: 50px;
       // letter-spacing: 2px;
+    }
+
+    div {
+      article {
+        margin-top: 40px;
+        div {
+          font-size: 1.05rem;
+          margin-bottom: 7px;
+          font-weight: 500;
+          opacity: 0.7;
+          padding-left: 10px;
+          border-left: 3.5px solid black;
+        }
+
+        a {
+          display: block;
+          width: 90%;
+          text-decoration: none;
+          h4 {
+            font-size: 1.8rem;
+          }
+          h4:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .read-more {
+      display: block;
+      width: max-content;
+      text-decoration: none;
+      color: #ffffff;
+      margin-top: 50px;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      padding: 15px 55px;
+      font-weight: 500;
+      background-color: black;
+      border: 2px solid black;
+    }
+    .read-more:hover {
+      background-color: transparent;
+      color: black;
     }
   }
 }
 
-.light-grad {
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  width: 50px;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgba(255, 255, 255, 1)
-  );
-}
-
-.dark-grad {
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  width: 50px;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #191919);
-}
-
-.dark-top {
-  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #191919);
-}
-.light-top {
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 0, 0, 0),
-    rgba(255, 255, 255, 1)
-  );
-}
-.dark-bottom {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #191919);
-}
-.light-bottom {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 0, 0, 0),
-    rgba(255, 255, 255, 1)
-  );
-}
-
 .articles-main {
   flex: 1 1 auto;
-  padding: 0 20px;
+  padding: 100px 20px 0 20px;
+
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: $merri;
+    font-weight: 900;
+  }
 
   .articles-holder {
-    margin-top: 5px;
     margin: auto;
-    max-width: 770px;
-    padding: 15px 0 10px 0;
-    border-left: 0.8px dashed #d2d1d1; //#414141
+    margin-top: 35px;
+    max-width: 800px;
+    padding: 40px 0 10px 0;
+    border-left: 3.5px solid #000000; //#414141
     position: relative;
 
     .grad-top {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: -1px;
-      width: 2px;
-      height: 35px;
+      left: -4px;
+      width: 4px;
+      height: 40px;
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 0, 0, 0),
+        rgba(255, 255, 255, 1)
+      );
     }
     .grad-bottom {
       position: absolute;
       bottom: 0;
-      left: -1px;
-      width: 2px;
+      left: -4px;
+      width: 4px;
       height: 30px;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgba(255, 255, 255, 1)
+      );
     }
 
     .articles {
       article {
         margin: 0 0 30px 0;
-        padding: 0 0 5px 50px;
-        border-bottom: 0.8px dashed #d2d1d1;
+        padding: 0 0 5px 40px;
         position: relative;
         .article-content {
           div {
-            font-size: 0.8rem;
+            font-size: 1rem;
             margin-bottom: 2px;
             font-weight: 500;
             opacity: 0.7;
           }
+          .timeline {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 999px;
+            top: -4px;
+            left: -13.5px;
+            opacity: 1;
+            background: #000000;
+            border: 5px solid white;
+          }
+
           a {
             display: block;
-            width: 90%;
             text-decoration: none;
             h4 {
-              font-size: 1.2rem;
+              font-size: 1.6rem;
               margin-bottom: 3px;
             }
             h4:hover {
@@ -322,6 +316,7 @@ header {
 
 .article-main {
   flex: 1 1 auto;
+  padding: 50px 0;
 
   .article-holder {
     max-width: 800px;
@@ -379,18 +374,13 @@ header {
 
 .projects-main {
   flex: 1 1 auto;
-  padding: 0 20px;
+  padding: 100px 20px;
 
   .projects-holder {
-    padding: 20px 0 0 0;
-
     h1 {
       text-align: center;
-      font-size: 3.8rem;
-      background: -webkit-linear-gradient(#535353, #000000);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 5rem;
+      font-family: $merri;
       font-weight: 900;
     }
 
@@ -459,11 +449,87 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  .dark-divider {
-    width: 90%;
+@media (max-width: 1100px) {
+  header {
+    padding: 0 50px;
+    nav {
+      display: flex;
+      gap: 2.2rem;
+      justify-content: end;
+      font-size: 1.3rem;
+      font-weight: 600;
+      a {
+        color: #ffffff;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .theme-toggle {
+      flex-basis: 20%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.3rem;
+    }
   }
 
+  .index-main {
+    .welcomer {
+      padding: 0 50px;
+
+      h1 {
+        margin-top: 220px;
+        font-size: 8.8vw;
+      }
+
+      p {
+        font-size: 2vw;
+      }
+
+      form {
+        input {
+          min-width: 27vw;
+        }
+
+        button {
+          padding: 15px 40px;
+        }
+      }
+    }
+
+    .recent-articles {
+      padding: 80px 50px 90px 50px;
+
+      h2 {
+        font-size: 6.3vw;
+      }
+
+      div {
+        article {
+          div {
+            font-size: 1.8vw;
+          }
+
+          a {
+            width: 100%;
+            text-decoration: none;
+            h4 {
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+
+      .read-more {
+        padding: 15px 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
   .back-to-top {
     bottom: 17px;
     right: 17px;
@@ -476,15 +542,38 @@ footer {
   header {
     padding: 0 15px;
     border: none;
+    background-color: #000000;
+    z-index: 50;
 
     h2 {
       font-size: 1.8rem;
     }
 
     nav {
-      flex-basis: 50%;
-      text-align: end;
-      gap: 10px;
+      z-index: -5;
+      a {
+        display: none;
+      }
+
+      .toggle {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 5.1vw;
+      }
+    }
+    .dropdown {
+      position: absolute;
+      background-color: white;
+      top: 0;
+      right: 0;
+      left: 0;
+      transform: translate(0, -1000px);
+      z-index: -20;
+    }
+
+    .down {
+      transform: translate(0, 65px);
     }
 
     .theme-toggle {
@@ -503,7 +592,120 @@ footer {
       p {
         font-size: 1.1rem;
         padding: 0 8px 20px 8px;
-        text-align: center;
+      }
+    }
+  }
+
+  .index-main {
+    .welcomer {
+      background-color: #000000;
+      min-height: 100vh;
+      display: block;
+      padding: 0 150px;
+
+      h1 {
+        margin-top: 200px;
+        font-size: 10.8vw;
+        margin-bottom: 5px;
+      }
+
+      hr {
+        max-width: 710px;
+      }
+
+      p {
+        max-width: 700px;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 25px 0;
+      }
+
+      form {
+        padding: 20px 0;
+        display: flex;
+        gap: 50px;
+
+        input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid white;
+          padding: 15px 20px;
+          font-size: 1.1rem;
+          color: white;
+          min-width: 400px;
+        }
+        input:focus {
+          outline: none;
+        }
+
+        button {
+          border-radius: 2px;
+          font-size: 1.1rem;
+          padding: 15px 55px;
+          font-weight: 500;
+          background-color: white;
+          border: 2px solid white;
+        }
+        button:hover {
+          background-color: transparent;
+          color: white;
+        }
+      }
+    }
+
+    .recent-articles {
+      padding: 90px 150px 90px 150px;
+
+      h2 {
+        font-size: 4rem;
+        font-family: $merri;
+        margin-bottom: 50px;
+        // letter-spacing: 2px;
+      }
+
+      div {
+        article {
+          margin-top: 40px;
+          div {
+            font-size: 1.05rem;
+            margin-bottom: 7px;
+            font-weight: 500;
+            opacity: 0.7;
+            padding-left: 10px;
+            border-left: 3.5px solid black;
+          }
+
+          a {
+            display: block;
+            width: 90%;
+            text-decoration: none;
+            h4 {
+              font-size: 1.8rem;
+            }
+            h4:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+
+      .read-more {
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        color: #ffffff;
+        margin-top: 50px;
+        border-radius: 2px;
+        font-size: 1.1rem;
+        padding: 15px 55px;
+        font-weight: 500;
+        background-color: black;
+        border: 2px solid black;
+      }
+      .read-more:hover {
+        background-color: transparent;
+        color: black;
       }
     }
   }
