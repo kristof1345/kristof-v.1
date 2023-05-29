@@ -13,7 +13,7 @@ export default function Articles({ theme }) {
           siteName: "Kristof's Journal - Articles",
         }}
       />
-      <main className={`articles-main `}>
+      <main className={`articles-main`}>
         <h1>Article&apos;s</h1>
         <div className="articles-holder">
           <div className="grad-top" />

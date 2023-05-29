@@ -7,10 +7,12 @@ const ScrollToTop = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let el = document.querySelector(".back-to-top");
-      if (window.scrollY > 400) {
-        el.style.opacity = 1;
-      } else {
-        el.style.opacity = 0;
+      if (el) {
+        if (window.scrollY > 400) {
+          el.style.opacity = 1;
+        } else {
+          el.style.opacity = 0;
+        }
       }
     });
   }, []);

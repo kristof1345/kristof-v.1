@@ -22,7 +22,12 @@ export default function Header() {
           )}
         </div>
       </nav>
-      <div className={`dropdown ${menu === true ? "down" : ""}`}>sajdhjk</div>
+      <div className={`dropdown ${menu === true ? "down" : ""}`}>
+        <nav>
+          <Link href="/articles">Articles</Link>
+          <Link href="/projects">Projects</Link>
+        </nav>
+      </div>
     </header>
   );
 }
