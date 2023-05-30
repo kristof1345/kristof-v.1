@@ -22,7 +22,7 @@ export default function Articles({ theme }) {
             <article>
               <div className="article-content">
                 <div className="timeline"></div>
-                <div>MAY 5, 2023</div>
+                <div>MAY 18, 2023</div>
                 <Link
                   href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
                   className={"lightlogo"}
