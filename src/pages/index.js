@@ -32,6 +32,15 @@ export default function Home() {
           <h2>Recent Articles</h2>
           <div>
             <article>
+              <div>MAY 30, 2023</div>
+              <Link
+                href="/articles/the-biggest-enemies-of-a-developer"
+                className="lightlogo"
+              >
+                <h4>The biggest enemies of a developer - Part 1</h4>
+              </Link>
+            </article>
+            <article>
               <div>MAY 18, 2023</div>
               <Link
                 href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
