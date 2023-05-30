@@ -1,13 +1,13 @@
 import { NextSeo } from "next-seo";
 import ScrollToTop from "../components/ScrollToTop";
 
-const howToLearnWayMoreFromCodingThanEverBefore = ({ theme }) => {
+const howToLearnWayMoreFromCodingThanEverBefore = () => {
   return (
     <>
       <NextSeo
         title="How to learn way more from coding than ever before"
         description="As a developer, learning is your superpower. It is especially important now that frameworks and new tech emerges every 2 days. The faster you can learn something, the more valuable you will be."
-        canonical="www.example.com"
+        canonical="kristof.vercel.app"
         openGraph={{
           type: "article",
           article: {

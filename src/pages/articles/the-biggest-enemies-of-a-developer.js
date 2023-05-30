@@ -5,16 +5,17 @@ const theBiggestEnemiesOfADeveloper = () => {
   return (
     <>
       <NextSeo
-        title="The biggest enemies of a developer Part 1"
-        description="Want to become a web developer? Cool, you don't need a degree for that. You can learn web development by yourself. This is known as a self-taught developer. While it can be a rewarding experience, it also comes with its own set of challenges."
-        canonical="www.example.com"
+        title="The biggest enemies of a developer - Part 1"
+        description="As a developer, there will be a lot of things trying to make your life harder.
+        Whether it's your boss or a stupid bug..."
+        canonical="kristof.vercel.app"
         openGraph={{
           type: "article",
           article: {
-            publishedTime: "2023-05-05T09:013:13Z",
+            publishedTime: "2023-05-30T18:46:13Z",
           },
-          url: "https://kristof.vercel.app/articles/the-struggles-of-becoming-a-self-taught-developer",
-          siteName: "The Struggles of Becoming a Self Thaught Developer",
+          url: "https://kristof.vercel.app/articles/the-biggest-enemies-of-a-developer",
+          siteName: "The biggest enemies of a developer - Part 1",
         }}
       />
       <main className="article-main">

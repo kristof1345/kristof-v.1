@@ -7,7 +7,7 @@ const theStugglesOfBecomingASelfTaughtDeveloper = () => {
       <NextSeo
         title="The Struggles of Becoming a Self Thaught Developer"
         description="Want to become a web developer? Cool, you don't need a degree for that. You can learn web development by yourself. This is known as a self-taught developer. While it can be a rewarding experience, it also comes with its own set of challenges."
-        canonical="www.example.com"
+        canonical="kristof.vercel.app"
         openGraph={{
           type: "article",
           article: {
