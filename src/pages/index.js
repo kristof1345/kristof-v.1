@@ -41,12 +41,12 @@ export default function Home() {
               </Link>
             </article>
             <article>
-              <div>MAY 18, 2023</div>
+              <div>MAY 3, 2023</div>
               <Link
-                href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
+                href="/articles/the-struggles-of-becoming-a-self-taught-developer"
                 className="lightlogo"
               >
-                <h4>How to learn way more from coding than ever before</h4>
+                <h4>The struggles of becoming a self thaught developer</h4>
               </Link>
             </article>
           </div>
