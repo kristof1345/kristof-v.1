@@ -20,8 +20,8 @@ export default function Home() {
             <h1>Kristof&apos;s Journal</h1>
             {/* <hr className="divider" /> */}
             <p>
-              If you don&apos;t care about web development or self improvement
-              just forget about this website
+              Exploring the fields of writing and self-improvement through
+              building a personal brand.
             </p>
             <Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>
             <form
