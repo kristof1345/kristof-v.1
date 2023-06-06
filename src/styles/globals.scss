@@ -150,32 +150,73 @@ header {
       form {
         padding: 20px 0;
         display: flex;
+        max-width: 800px;
         gap: 50px;
 
+        [data-style="clean"] {
+          padding: 0px !important;
+        }
+
+        .formkit-field {
+          margin-right: 20px !important;
+
+          .formkit-input {
+            background-color: transparent;
+            border-radius: 0 !important;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            color: white !important;
+            min-width: 25vw;
+          }
+          .formkit-input:focus {
+            outline: none;
+            border-color: #ffffff;
+          }
+          .formkit-input::placeholder {
+            opacity: 0.5;
+            font-weight: 300;
+          }
+        }
         input {
           background-color: transparent;
+          border-radius: 0 !important;
           border: none;
           border-bottom: 2px solid white;
           padding: 15px 20px;
           font-size: 1.1rem;
-          color: white;
+          color: white !important;
           min-width: 25vw;
         }
         input:focus {
           outline: none;
+          border-color: #ffffff;
         }
 
+        .formkit-submit {
+          border-radius: 2px;
+          font-size: 1.1rem;
+          font-weight: 500;
+          padding: 15px 55px;
+          color: #000000;
+          background-color: white !important;
+          border: 2px solid white;
+        }
+        .formkit-submit:hover {
+          background-color: transparent;
+        }
         button {
           border-radius: 2px;
           font-size: 1.1rem;
-          padding: 15px 55px;
           font-weight: 500;
-          background-color: white;
+          padding: 15px 55px;
+          color: #000000;
+          background-color: white !important;
           border: 2px solid white;
         }
         button:hover {
           background-color: transparent;
-          color: white;
         }
       }
     }
@@ -641,11 +682,12 @@ footer {
           font-size: 1.1rem;
           padding: 0 8px 20px 8px;
         }
-
         form {
-          padding: 20px 0 10px 0;
-          flex-direction: column;
-          gap: 40px;
+          padding: 0 !important;
+          .formkit-field {
+            margin-right: 0px !important;
+            margin-bottom: 25px !important;
+          }
         }
       }
     }
@@ -788,6 +830,7 @@ footer {
 
   .index-main {
     .welcomer {
+      padding-top: 20px;
       div {
         h1 {
           margin-bottom: 5px;
@@ -800,16 +843,14 @@ footer {
         }
 
         form {
-          padding: 10px 0 5px 0;
-          gap: 25px;
-
-          input {
-            font-size: 1rem;
+          padding: 0;
+          padding-top: 10px;
+          .formkit-field {
+            margin-right: 0px !important;
+            margin-bottom: 15px !important;
           }
-
-          button {
-            font-size: 1rem;
-            padding: 10px 0;
+          .formkit-submit {
+            margin-bottom: 0 !important;
           }
         }
       }
