@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
               If you don&apos;t care about web development or self improvement
               just forget about this website
             </p>
-            <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+            <Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>
             <form
               action="https://app.convertkit.com/forms/5233942/subscriptions"
               className="seva-form formkit-form"
