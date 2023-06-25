@@ -20,8 +20,9 @@ export default function Home() {
             <h1>Kristof&apos;s Journal</h1>
             {/* <hr className="divider" /> */}
             <p>
-              Sharing thoght provoking ideas about self-improvement. Learning
-              copywriting and writing about what I learn/learnt.
+              Occasionally I will send you e-mail&apos;s containing some
+              engaging stories about how you can become a better copywriter and
+              a better person.
             </p>
             <Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>
             <form
