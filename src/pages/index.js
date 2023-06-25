@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import Link from "next/link";
+// import Link from "next/link";
 import Script from "next/script";
 
 export default function Home() {
@@ -20,8 +20,8 @@ export default function Home() {
             <h1>Kristof&apos;s Journal</h1>
             {/* <hr className="divider" /> */}
             <p>
-              Exploring the fields of writing and self-improvement through
-              building a personal brand.
+              Sharing thoght provoking ideas about self-improvement. Learning
+              copywriting and writing about what I learn/learnt.
             </p>
             <Script src="https://f.convertkit.com/ckjs/ck.5.js"></Script>
             <form
@@ -84,7 +84,7 @@ export default function Home() {
             </form> */}
           </div>
         </section>
-        <section className="recent-articles">
+        {/* <section className="recent-articles">
           <h2>Recent Articles</h2>
           <div>
             <article>
@@ -118,7 +118,7 @@ export default function Home() {
           <Link href="/articles" className="read-more">
             Read More Articles
           </Link>
-        </section>
+        </section> */}
       </main>
     </>
   );
