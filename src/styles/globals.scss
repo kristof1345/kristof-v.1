@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 $rale: raleway, system-ui;
 $mont: "Montserrat", sans-serif;
 $merri: "Merriweather", serif;
-$fira: "Fira Sans", sans-serif;
+$arial: Arial, Helvetica, sans-serif;
+$lato: 'Lato', sans-serif;
+$noto: 'Noto Serif', serif;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: $mont;
+  font-family: $lato;
   transition: 200ms ease-in-out;
 }
 
@@ -39,6 +41,23 @@ $fira: "Fira Sans", sans-serif;
   color: #000000;
 }
 
+.blck-sub-btn {
+  background-color: #FFDE59;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 16px 55px;
+  border-radius: 2px;
+  border: 2px solid #FFDE59;
+  width: min-content;
+}
+
+.blck-sub-btn:hover {
+  background-color: transparent;
+  color: #FFDE59;
+}
+
 .divider {
   border: none;
   border-top: 0.5px dashed #d2d1d1;
@@ -50,8 +69,27 @@ body {
   height: 100vh;
 }
 
-header {
+.blc-header {
   background-color: #000000;
+
+  .logo {
+    color: #ffffff;
+  }
+
+  nav {
+    .toggle {
+      color: white;
+    }
+  }
+
+  a {
+    color: #ffffff;
+  }
+}
+
+header {
+  transition: none;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +101,8 @@ header {
   justify-content: space-between;
 
   .logo {
-    color: #ffffff;
+    color: #000000;
+    font-family: $noto;
     flex-basis: 20%;
   }
 
@@ -74,11 +113,11 @@ header {
   h2 {
     font-size: 2rem;
     font-weight: 800;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
 
   h2:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   nav {
@@ -92,7 +131,7 @@ header {
     }
 
     a {
-      color: #ffffff;
+      color: #000000;
     }
 
     a:hover {
@@ -122,150 +161,141 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 150px;
     padding-top: 0px;
 
     div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
       h1 {
         margin-top: 20px;
-        font-size: 8.2vw;
-        font-weight: 900;
-        background: -webkit-linear-gradient(#c7c7c7, #ffffff);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      hr {
-        max-width: 710px;
+        text-align: center;
+        font-family: $noto;
+        font-size: 5.6vw;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        // background: -webkit-linear-gradient(#c7c7c7, #ffffff);
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        span {
+          font-family: $noto;
+          color: #FFDE59;
+        }
       }
 
       p {
+        text-align: center;
         max-width: 900px;
         color: #ffffff;
-        font-size: 1.6vw;
+        font-size: 1.5rem;
         font-weight: 400;
         padding: 25px 0;
       }
 
-      form {
+      .divider {
+        width: 15%;
+        height: 1px;
+        border-top: 2px solid #b5b5b5;
+        margin: 9px 0;
+      }
+
+      .holder {
         padding: 20px 0;
         display: flex;
         max-width: 800px;
-        gap: 50px;
+        gap: 25px;
 
-        [data-style="clean"] {
-          padding: 0px !important;
+        span {
+          color: #ffffff;
+          font-size: 1.3rem;
         }
 
-        .formkit-field {
-          margin-right: 20px !important;
-
-          .formkit-input {
-            background-color: transparent;
-            border-radius: 0 !important;
-            border: none;
-            border-bottom: 2px solid white;
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            color: white !important;
-            min-width: 25vw;
-          }
-          .formkit-input:focus {
-            outline: none;
-            border-color: #ffffff;
-          }
-          .formkit-input::placeholder {
-            opacity: 0.5;
-            font-weight: 300;
-          }
-        }
-        input {
-          background-color: transparent;
-          border-radius: 0 !important;
-          border: none;
-          border-bottom: 2px solid white;
-          padding: 15px 20px;
-          font-size: 1.1rem;
-          color: white !important;
-          min-width: 25vw;
-        }
-        input:focus {
-          outline: none;
-          border-color: #ffffff;
-        }
-
-        .formkit-submit {
+        a {
+          background-color: #FFDE59;
+          text-decoration: none;
+          color: black;
+          // font-family: $noto;
+          // letter-spacing: 1px;
+          font-weight: 700;
+          font-size: 1.5rem;
+          padding: 16px 55px;
           border-radius: 2px;
-          font-size: 1.1rem;
-          font-weight: 500;
-          padding: 15px 55px;
-          color: #000000;
-          background-color: white !important;
-          border: 2px solid white;
+          border: 2px solid #FFDE59;
         }
-        .formkit-submit:hover {
-          background-color: transparent !important;
-          color: white;
-        }
-        button {
-          border-radius: 2px;
-          font-size: 1.1rem;
-          font-weight: 500;
-          padding: 15px 55px;
-          color: #000000;
-          background-color: white !important;
-          border: 2px solid white;
-        }
-        button:hover {
+
+        a:hover {
           background-color: transparent;
+          color: #FFDE59;
         }
       }
     }
   }
 
   .recent-articles {
-    padding: 90px 150px 90px 150px;
+    padding: 90px 250px 90px 250px;
+    text-align: center;
 
     h2 {
       font-size: 4rem;
-      font-family: $merri;
-      margin-bottom: 50px;
+      font-family: $noto;
+      margin-bottom: 90px;
       // letter-spacing: 2px;
     }
 
-    div {
+    .sub-holder {
+      padding: 75px 0 85px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .recent-holder {
+      display: flex;
+      justify-content: space-between;
+
       article {
-        margin-top: 40px;
-        div {
-          font-size: 1.05rem;
-          margin-bottom: 7px;
-          font-weight: 500;
-          opacity: 0.7;
-          padding-left: 10px;
-          border-left: 3.5px solid black;
-        }
+        flex-basis: 33%;
 
         a {
           display: block;
-          width: 90%;
+          text-align: left;
+          width: 95%;
           text-decoration: none;
           h4 {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
           }
           h4:hover {
             opacity: 0.5;
+          }
+
+          div {
+            padding: 12px 0 8px 0;
+          }
+          
+          span {
+            opacity: 0.7;
           }
         }
       }
     }
 
     .read-more {
-      display: block;
+      display: inline-block;
       width: max-content;
       text-decoration: none;
       color: #ffffff;
-      margin-top: 50px;
+      margin-top: 70px;
       border-radius: 2px;
       font-size: 1.1rem;
       padding: 15px 55px;
@@ -287,7 +317,7 @@ header {
   h1 {
     text-align: center;
     font-size: 5rem;
-    font-family: $merri;
+    font-family: $noto;
     font-weight: 900;
   }
 
@@ -436,61 +466,6 @@ header {
   }
 }
 
-.projects-main {
-  flex: 1 1 auto;
-  padding: 100px 20px;
-
-  .projects-holder {
-    h1 {
-      text-align: center;
-      font-size: 5rem;
-      font-family: $merri;
-      font-weight: 900;
-    }
-
-    .darkh1 {
-      background: -webkit-linear-gradient(#a0a0a0, #ffffff);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .projects {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-
-      article {
-        width: 700px;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        padding-top: 15px;
-
-        .sec1 {
-          display: flex;
-          gap: 10px;
-
-          .icons {
-            display: flex;
-            gap: 10px;
-            font-size: 2.3rem;
-          }
-
-          a {
-            font-size: 1.2rem;
-            margin-top: 2px;
-            text-decoration: none;
-          }
-          a:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -498,9 +473,10 @@ footer {
   gap: 40px;
   height: 9vh;
   font-size: 1.5rem;
+  background-color: #000000;
 
   a {
-    color: #000000;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,12 +507,6 @@ footer {
       }
     }
 
-    .theme-toggle {
-      flex-basis: 20%;
-      display: flex;
-      justify-content: flex-end;
-      font-size: 1.3rem;
-    }
   }
 
   .index-main {
@@ -546,11 +516,11 @@ footer {
       div {
         h1 {
           // margin-top: 220px;
-          font-size: 8.8vw;
+          font-size: 8.3vw;
         }
 
         p {
-          font-size: 2vw;
+          font-size: 1.5rem;
         }
 
         form {
@@ -566,7 +536,7 @@ footer {
     }
 
     .recent-articles {
-      padding: 80px 50px 90px 50px;
+      padding: 80px 25px 90px 25px;
 
       h2 {
         font-size: 6.3vw;
@@ -574,10 +544,6 @@ footer {
 
       div {
         article {
-          div {
-            font-size: 1.8vw;
-          }
-
           a {
             width: 100%;
             text-decoration: none;
@@ -606,9 +572,9 @@ footer {
   }
 
   header {
+    z-index: 15;
     padding: 0 15px;
     border: none;
-    background-color: #000000;
     z-index: 50;
 
     h2 {
@@ -618,14 +584,14 @@ footer {
     nav {
       z-index: -5;
       a {
-        // display: none;
+        display: none;
       }
 
       .toggle {
         display: flex;
         align-items: center;
-        color: white;
-        font-size: 7.4vw;
+        font-size: 7vw;
+        color: #000000;
       }
     }
     .dropdown {
@@ -658,8 +624,8 @@ footer {
 
         a {
           display: block;
-          color: #000000;
           margin: 20px 0;
+          color: #000000;
         }
       }
     }
@@ -681,38 +647,26 @@ footer {
         }
 
         p {
-          font-size: 1.1rem;
-          padding: 0 8px 20px 8px;
+          padding: 5px 8px 25px 8px;
+          // font-size: 1.35rem;
         }
-        form {
-          padding: 0 !important;
-          .formkit-field {
-            margin-right: 0px !important;
-            margin-bottom: 25px !important;
-          }
-        }
+        
       }
     }
     .recent-articles {
-      padding: 80px 15px 60px 15px;
+      padding: 80px 20px 60px 20px;
 
       h2 {
-        font-size: 10vw;
+        font-size: 2.3rem;
+        margin-bottom: 80px;
       }
 
-      div {
+      .recent-holder {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
         article {
-          div {
-            font-size: 4.2vw;
-          }
-
-          a {
-            width: 100%;
-            text-decoration: none;
-            h4 {
-              font-size: 6.4vw;
-            }
-          }
+          width: 80%;
         }
       }
 
@@ -760,62 +714,34 @@ footer {
     }
   }
 
-  .projects-main {
-    .projects-holder {
-      padding: 0px 0 0 0;
-
-      h1 {
-        font-size: 13vw;
-      }
-
-      .projects {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-
-        article {
-          flex-direction: column;
-          gap: 15px;
-          padding-top: 15px;
-
-          .sec1 {
-            width: 100%;
-            justify-content: space-between;
-            gap: 10px;
-            align-items: center;
-
-            .icons {
-              font-size: 7.3vw;
-            }
-
-            a {
-              font-size: 4.7vw;
-              margin-top: 0px;
-            }
-          }
-        }
-      }
-    }
-  }
-
+  
   footer {
     height: 80px;
   }
 }
 
 @media (max-width: 340px) {
+
+  .blck-sub-btn {
+    font-size: 1.25rem;
+  }
+
   header {
     padding: 0 10px;
     border: none;
 
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
 
     nav {
       flex-basis: 35%;
       text-align: end;
       font-size: 2rem;
+
+      .toggle {
+        font-size: 1.85rem;
+      }
     }
     .dropdown {
       nav {
@@ -824,10 +750,6 @@ footer {
         }
       }
     }
-
-    .theme-toggle {
-      flex-basis: 5%;
-    }
   }
 
   .index-main {
@@ -835,31 +757,44 @@ footer {
       padding-top: 20px;
       div {
         h1 {
-          margin-bottom: 5px;
+          margin-bottom: 15px;
+          font-size: 2.5rem;
         }
 
         p {
-          font-size: 1rem;
-          padding: 0 8px 5px 8px;
+          font-size: 1.15rem;
+          padding: 0 8px 20px 8px;
           text-align: left;
         }
 
-        form {
-          padding: 0;
-          padding-top: 10px;
-          .formkit-field {
-            margin-right: 0px !important;
-            margin-bottom: 15px !important;
+        .holder {
+          gap: 25px;
+  
+          span {
+            font-size: 1.15rem;
           }
-          .formkit-submit {
-            margin-bottom: 0 !important;
+  
+          a {
+            font-size: 1.25rem;
           }
         }
       }
     }
 
     .recent-articles {
-      padding: 70px 15px 50px 15px;
+      padding: 60px 15px 50px 15px;
+
+      .sub-holder {
+        padding: 75px 0 85px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+  
+        span {
+          font-size: 1.3rem;
+        }
+      }
 
       h2 {
         font-size: 10.5vw;

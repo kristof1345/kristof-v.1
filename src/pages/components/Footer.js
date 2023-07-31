@@ -19,20 +19,6 @@ export default function Footer() {
       >
         <BsTwitter />
       </Link>
-      <Link
-        href="https://www.instagram.com/kcoder.blog/"
-        target="_blank"
-        aria-label="Instagram"
-      >
-        <BsInstagram />
-      </Link>
-      <Link
-        href="https://dev.to/kristof1345"
-        target="_blank"
-        aria-label="Dev Community"
-      >
-        <FaDev />
-      </Link>
     </footer>
   );
 }
