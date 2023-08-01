@@ -16,14 +16,16 @@ export default function Home() {
       <main className="index-main">
         <section className="welcomer">
           <div>
-            <h1>Copy That Sparks <span>Emotions</span></h1>
-            <p>
-              I Write About Copywriting
-            </p>
+            <h1>
+              Copy That Sparks <span>Emotions</span>
+            </h1>
+            <p>I Write About Copywriting</p>
             <hr className="divider" />
             <div className="holder">
               <span>Get My Emails</span>
-              <Link href="https://kristof-3.ck.page/27225f2782" target="_blank">Subscribe</Link>
+              <Link href="https://kristof-3.ck.page/27225f2782" target="_blank">
+                Subscribe
+              </Link>
             </div>
           </div>
         </section>
@@ -32,60 +34,26 @@ export default function Home() {
           <div className="recent-holder">
             <article>
               <Link
-                href="/articles/the-biggest-enemies-of-a-developer"
+                href="/articles/this-is-what-copy-turned-into"
                 className="lightlogo"
               >
-                <h4>The biggest enemies of a developer - Part 1</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
-              </Link>
-            </article>
-            <article>
-              <Link
-                href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
-                className="lightlogo"
-              >
-                <h4>How to learn way more from coding than ever before</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
-              </Link>
-            </article>
-            <article>
-              <Link
-                href="/articles/the-struggles-of-becoming-a-self-taught-developer"
-                className="lightlogo"
-              >
-                <h4>The struggles of becoming a self thaught developer</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
               </Link>
             </article>
           </div>
           <div className="sub-holder">
             <span>Get My Emails</span>
-            <Link className="blck-sub-btn" href="https://kristof-3.ck.page/27225f2782" target="_blank">Subscribe</Link>
+            <Link
+              className="blck-sub-btn"
+              href="https://kristof-3.ck.page/27225f2782"
+              target="_blank"
+            >
+              Subscribe
+            </Link>
           </div>
-          <div className="recent-holder">
-            <article>
-              <Link
-                href="/articles/the-biggest-enemies-of-a-developer"
-                className="lightlogo"
-              >
-                <h4>The biggest enemies of a developer - Part 1</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
-              </Link>
-            </article>
-            <article>
-              <Link
-                href="/articles/how-to-learn-way-more-from-coding-than-ever-before"
-                className="lightlogo"
-              >
-                <h4>How to learn way more from coding than ever before</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
-              </Link>
-            </article>
+          {/* <div className="recent-holder">
             <article>
               <Link
                 href="/articles/the-struggles-of-becoming-a-self-taught-developer"
@@ -96,10 +64,10 @@ export default function Home() {
                 <span>Jul 11, 2023</span>
               </Link>
             </article>
-          </div>
-          <Link href="/articles" className="read-more">
+          </div> */}
+          {/* <Link href="/articles" className="read-more">
             Read More Articles
-          </Link>
+          </Link> */}
         </section>
       </main>
     </>
