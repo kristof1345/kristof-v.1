@@ -23,17 +23,19 @@ const thisIsWhatCopyTurnedInto = () => {
         <div className="article-holder">
           <section className={`intro`}>
             <h1>This is what copy turned into?</h1>
-            <span>Aug 1, 2023 • 321 words</span>
+            <span>
+              Aug 1, 2023<span className="dot"></span>321 words
+            </span>
           </section>
           <section className={`article-contents`}>
             <p>Yesterday I visited the Educate website.</p>
-            <p>You know, Iman Gadzhi's new courses...</p>
+            <p>You know, Iman Gadzhi&apos;s new courses...</p>
             <p>
               I wanted to check out the copy of the website, but something
               caught my eye.
             </p>
             <p>There was a course on copywriting.</p>
-            <p>"Pen to Profit"</p>
+            <p>&quot;Pen to Profit&quot;</p>
             <p>Hmm, pretty good name.</p>
             <p>
               So I checked the description, and this is where everything went
@@ -46,17 +48,20 @@ const thisIsWhatCopyTurnedInto = () => {
             <p>Even tho recently he started turning into more of a guru.</p>
             <p>But, anyway...</p>
             <p>I noticed two things straight away. Well, two sentences...</p>
-            <p className="bold">"proven fill-in-the-blanks copy structure"</p>
+            <p className="bold">
+              &quot;proven fill-in-the-blanks copy structure&quot;
+            </p>
             <p>Oof.</p>
             <p className="bold">
-              "you'll learn how to use A.I. to get all the copy written for you"
+              &quot;you&apos;ll learn how to use A.I. to get all the copy
+              written for you&quot;
             </p>
             <p>...</p>
             <p>...</p>
             <p>Iman.</p>
             <p>WTF</p>
             <p>Every decent copywriter knows that the first one is total BS.</p>
-            <p>Only those use it who don't want to do the real work.</p>
+            <p>Only those use it who don&apos;t want to do the real work.</p>
             <p>
               Because for every market, every situation, and every time you need
               different copy.
@@ -65,7 +70,9 @@ const thisIsWhatCopyTurnedInto = () => {
               Copy that worked in the health niche, is not going to work in the
               fitness niche.
             </p>
-            <p>Or copy that worked 10 years ago, isn't going to work now.</p>
+            <p>
+              Or copy that worked 10 years ago, isn&apos;t going to work now.
+            </p>
             <p>
               It might convert, but you would have way better results with copy
               researched and written now.
@@ -93,7 +100,7 @@ const thisIsWhatCopyTurnedInto = () => {
                   <h4>Can it write good copy?</h4>
                   <p>Nope.</p>
                   <p>
-                    It won't be able to write copy that takes into account
+                    It won&apos;t be able to write copy that takes into account
                     awareness and sophistication levels.
                   </p>
                   <p>
@@ -116,7 +123,7 @@ const thisIsWhatCopyTurnedInto = () => {
                 </li>
               </ul>
               <p>Okay, that was enough of a rant for today...</p>
-              <p>'Till next time</p>
+              <p>&apos;Till next time</p>
             </div>
           </section>
           <div className="sub-holder">

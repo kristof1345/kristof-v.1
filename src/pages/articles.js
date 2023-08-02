@@ -22,7 +22,9 @@ export default function Articles({ theme }) {
             <article>
               <div className="article-content">
                 <div className="timeline"></div>
-                <div>Aug 1, 2023 • 321 Words</div>
+                <div>
+                  Aug 1, 2023<span className="dot"></span>321 Words
+                </div>
                 <Link
                   href="/articles/this-is-what-copy-turned-into"
                   className="lightlogo"
