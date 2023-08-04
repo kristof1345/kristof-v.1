@@ -19,10 +19,11 @@ export default function Home() {
             <h1>
               Copy That Sparks <span>Emotions</span>
             </h1>
-            <p>I Write About Copywriting</p>
+            {/* <p>I Write About Copywriting</p> */}
             <hr className="divider" />
             <div className="holder">
               <span>Get My Emails</span>
+              <div>And a free gift...</div>
               <Link href="/subscribe" target="_blank">
                 Subscribe
               </Link>
@@ -45,6 +46,7 @@ export default function Home() {
           </div>
           <div className="sub-holder">
             <span>Get My Emails</span>
+            <div>And a free gift...</div>
             <Link className="blck-sub-btn" href="/subscribe" target="_blank">
               Subscribe
             </Link>
