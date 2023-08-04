@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 
-export default function Articles({ theme }) {
+export default function Articles() {
   return (
     <>
       <NextSeo
-        title="Kristof's Journal - Articles"
-        description="My Articles, about web development, programming, self improvement and much more"
+        title="Copy That Sparks Emotions - Articles"
+        description="I share engaging stories filled with copywriting lessons"
         canonical="https://kristof.vercel.app/"
         openGraph={{
           url: "https://kristof.vercel.app/articles/",
-          siteName: "Kristof's Journal - Articles",
+          siteName: "Copy That Sparks Emotions - Articles",
         }}
       />
       <main className={`articles-main`}>

@@ -5,55 +5,66 @@ import Link from "next/link";
 
 const subscribe = () => {
   return (
-    <div className="subscribe-main">
-      <section className="img-sec">
-        <Image
-          src={me.src}
-          width={2000}
-          height={2000}
-          alt="Picture of the author"
-        />
-      </section>
-      <section className="text-sec">
-        <h1>Copy That Sparks Emotions</h1>
-        <h3>
-          Subscribe to my email list, where I share engaging stories filled with
-          copywriting lessons
-        </h3>
-        <p>✅Free copywriting and marketing tips</p>
-        <p>✅Resources that are exclusive to my list</p>
-        <p>✅Stories from my life...</p>
-        <h4>Plus:</h4>
-        <p>Get a free gift from me.</p>
-        <h4>Note:</h4>
-        <p>
-          If you don&apos;t get a welcome email, please check your Spam and/or
-          Promotions folders.
-        </p>
-        {/* <Link
+    <>
+      <NextSeo
+        title="Copy That Sparks Emotions - Subscribe"
+        description="Subscribe to my email list, where I share engaging stories filled with copywriting lessons"
+        canonical="https://kristof.vercel.app/"
+        openGraph={{
+          url: "https://kristof.vercel.app/subscribe/",
+          siteName: "Copy That Sparks Emotions - Subscribe",
+        }}
+      />
+      <div className="subscribe-main">
+        <section className="img-sec">
+          <Image
+            src={me.src}
+            width={2000}
+            height={2000}
+            alt="Picture of the author"
+          />
+        </section>
+        <section className="text-sec">
+          <h1>Copy That Sparks Emotions</h1>
+          <h3>
+            Subscribe to my email list, where I share engaging stories filled
+            with copywriting lessons
+          </h3>
+          <p>✅Free copywriting and marketing tips</p>
+          <p>✅Resources that are exclusive to my list</p>
+          <p>✅Stories from my life...</p>
+          <h4>Plus:</h4>
+          <p>Get a free gift from me.</p>
+          <h4>Note:</h4>
+          <p>
+            If you don&apos;t get a welcome email, please check your Spam and/or
+            Promotions folders.
+          </p>
+          {/* <Link
           href="https://kristofs-newsletter-8353d2.beehiiv.com/subscribe"
           className="sub-sub"
         >
           Suscribe
         </Link> */}
-        <iframe
-          src="https://embeds.beehiiv.com/cee325e0-9382-4e37-975e-2bab94da0abd?slim=true"
-          data-test-id="beehiiv-embed"
-          height={52}
-          frameBorder={0}
-          scrolling="no"
-          style={{
-            margin: "20px 0 0 0",
-            width: "100%",
-            borderRadius: "0px !important",
-            backgroundColor: "transparent",
-          }}
-        />
-        <span className="respect">
-          We respect your privacy. Unsubscribe any time.
-        </span>
-      </section>
-    </div>
+          <iframe
+            src="https://embeds.beehiiv.com/cee325e0-9382-4e37-975e-2bab94da0abd?slim=true"
+            data-test-id="beehiiv-embed"
+            height={52}
+            frameBorder={0}
+            scrolling="no"
+            style={{
+              margin: "20px 0 0 0",
+              width: "100%",
+              borderRadius: "0px !important",
+              backgroundColor: "transparent",
+            }}
+          />
+          <span className="respect">
+            We respect your privacy. Unsubscribe any time.
+          </span>
+        </section>
+      </div>
+    </>
   );
 };
 

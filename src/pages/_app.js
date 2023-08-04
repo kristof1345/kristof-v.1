@@ -13,8 +13,7 @@ export default function App({ Component, pageProps }) {
     <>
       <DefaultSeo
         title="Kristof's Journal"
-        description="My ideas and thoughts about web development, programming and self
-            improvement"
+        description="I share engaging stories filled with copywriting lessons"
         openGraph={{
           type: "website",
           locale: "en_IE",
