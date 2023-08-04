@@ -23,19 +23,35 @@ const subscribe = () => {
         <p>✅Free copywriting and marketing tips</p>
         <p>✅Resources that are exclusive to my list</p>
         <p>✅Stories from my life...</p>
-        <h3>Plus:</h3>
+        <h4>Plus:</h4>
         <p>Get a free gift from me.</p>
-        <h3>Note:</h3>
+        <h4>Note:</h4>
         <p>
           If you don&apos;t get a welcome email, please check your Spam and/or
           Promotions folders.
         </p>
-        <Link
+        {/* <Link
           href="https://kristofs-newsletter-8353d2.beehiiv.com/subscribe"
           className="sub-sub"
         >
           Suscribe
-        </Link>
+        </Link> */}
+        <iframe
+          src="https://embeds.beehiiv.com/cee325e0-9382-4e37-975e-2bab94da0abd?slim=true"
+          data-test-id="beehiiv-embed"
+          height={52}
+          frameBorder={0}
+          scrolling="no"
+          style={{
+            margin: "20px 0 0 0",
+            width: "100%",
+            borderRadius: "0px !important",
+            backgroundColor: "transparent",
+          }}
+        />
+        <span className="respect">
+          We respect your privacy. Unsubscribe any time.
+        </span>
       </section>
     </div>
   );
