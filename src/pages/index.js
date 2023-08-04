@@ -16,7 +16,7 @@ export default function Home() {
         <section className="welcomer">
           <div>
             <h1>
-              Copy That Sparks <span>Emotions</span>
+              Copy That Sparks<span> Emotions</span>
             </h1>
             {/* <p>I Write About Copywriting</p> */}
             <hr className="divider" />
