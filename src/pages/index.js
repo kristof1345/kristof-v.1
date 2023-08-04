@@ -23,7 +23,7 @@ export default function Home() {
             <hr className="divider" />
             <div className="holder">
               <span>Get My Emails</span>
-              <Link href="https://kristof-3.ck.page/27225f2782" target="_blank">
+              <Link href="/subscribe" target="_blank">
                 Subscribe
               </Link>
             </div>
@@ -45,11 +45,7 @@ export default function Home() {
           </div>
           <div className="sub-holder">
             <span>Get My Emails</span>
-            <Link
-              className="blck-sub-btn"
-              href="https://kristof-3.ck.page/27225f2782"
-              target="_blank"
-            >
+            <Link className="blck-sub-btn" href="/subscribe" target="_blank">
               Subscribe
             </Link>
           </div>

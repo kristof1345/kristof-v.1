@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import { MdClose,  MdMenu} from "react-icons/md";
+import { MdClose, MdMenu } from "react-icons/md";
+import { BsLink45Deg } from "react-icons/bs";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -9,11 +10,11 @@ export default function Header() {
   const router = useRouter();
 
   useEffect(() => {
-      setMenu(false)
+    setMenu(false);
   }, [router]);
 
   return (
-    <header className={router.pathname === '/' ? "blc-header" : ""}>
+    <header className={router.pathname === "/" ? "blc-header" : ""}>
       <Link href="/">
         <h2 className="logo">Kristof</h2>
       </Link>

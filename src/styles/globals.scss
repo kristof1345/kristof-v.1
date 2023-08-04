@@ -137,6 +137,7 @@ header {
     display: flex;
     gap: 2.2rem;
     justify-content: end;
+    align-items: center;
     font-size: 1.3rem;
     font-weight: 600;
     .toggle {
@@ -144,6 +145,8 @@ header {
     }
 
     a {
+      display: flex;
+      align-items: center;
       color: #000000;
     }
 
@@ -184,7 +187,7 @@ header {
       align-items: center;
 
       h1 {
-        margin-top: 20px;
+        margin-top: 40px;
         text-align: center;
         font-family: $noto;
         font-size: 5.6vw;
@@ -250,7 +253,7 @@ header {
   }
 
   .recent-articles {
-    padding: 90px 250px 90px 250px;
+    padding: 90px 250px 40px 250px;
     text-align: center;
 
     h2 {
@@ -508,6 +511,57 @@ header {
   }
 }
 
+.subscribe-main {
+  flex: 1 1 auto;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+
+  section {
+    width: 600px;
+  }
+
+  .img-sec {
+    text-align: center;
+    img {
+      width: 350px;
+      height: 350px;
+      border-radius: 100%;
+    }
+  }
+
+  .text-sec {
+    padding-top: 30px;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      padding: 15px 0;
+    }
+
+    p {
+      font-size: 1.13rem;
+      padding-bottom: 8px;
+    }
+
+    .sub-sub {
+      background-color: #000000;
+      text-decoration: none;
+      border-radius: 2px;
+      padding: 15px 45px;
+      color: white;
+      font-size: 1.2rem;
+      margin: 20px 0 50px 0;
+      width: min-content;
+      display: block;
+    }
+  }
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -577,7 +631,7 @@ footer {
     }
 
     .recent-articles {
-      padding: 80px 25px 90px 25px;
+      padding: 80px 25px 10px 25px;
 
       h2 {
         font-size: 6.3vw;
@@ -694,7 +748,7 @@ footer {
       }
     }
     .recent-articles {
-      padding: 80px 20px 60px 20px;
+      padding: 80px 20px 10px 20px;
 
       h2 {
         font-size: 2.3rem;
@@ -750,6 +804,30 @@ footer {
         span {
           font-size: 1rem;
         }
+      }
+    }
+  }
+
+  .subscribe-main {
+    padding: 10px;
+
+    section {
+      width: auto;
+    }
+
+    .img-sec {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .text-sec {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
       }
     }
   }
@@ -820,7 +898,7 @@ footer {
     }
 
     .recent-articles {
-      padding: 60px 15px 50px 15px;
+      padding: 60px 15px 10px 15px;
 
       .sub-holder {
         padding: 75px 0 85px 0;

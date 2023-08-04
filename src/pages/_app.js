@@ -4,8 +4,11 @@ import { useState } from "react";
 import Footer from "./components/Footer";
 import { DefaultSeo } from "next-seo";
 import relImage from "../../public/K.png";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <DefaultSeo
@@ -31,9 +34,9 @@ export default function App({ Component, pageProps }) {
           },
         ]}
       />
-      <Header />
+      {router.pathname === "/subscribe" ? <></> : <Header />}
       <Component {...pageProps} />
-      <Footer />
+      {router.pathname === "/subscribe" ? <></> : <Footer />}
     </>
   );
 }

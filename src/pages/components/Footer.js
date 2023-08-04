@@ -1,5 +1,4 @@
-import { BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaDev } from "react-icons/fa";
+import { BsGithub, BsTwitter, BsLink45Deg } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Footer() {
@@ -18,6 +17,13 @@ export default function Footer() {
         aria-label="Twitter"
       >
         <BsTwitter />
+      </Link>
+      <Link
+        href="https://linktr.ee/kristf_nemeth"
+        target="_blank"
+        aria-label="Link-Tree"
+      >
+        <BsLink45Deg />
       </Link>
     </footer>
   );
