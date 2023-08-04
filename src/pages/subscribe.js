@@ -27,7 +27,7 @@ const subscribe = () => {
         <p>Get a free gift from me.</p>
         <h3>Note:</h3>
         <p>
-          If you don't get a welcome email, please check your Spam and/or
+          If you don&apos;t get a welcome email, please check your Spam and/or
           Promotions folders.
         </p>
         <Link
