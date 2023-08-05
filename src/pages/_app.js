@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
         twitter={{
           handle: "@kristf_nemeth",
           site: "kristof.vercel.app",
-          cardType: "summary",
+          // cardType: "summary",
         }}
         additionalLinkTags={[
           {
