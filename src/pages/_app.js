@@ -12,13 +12,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Kristof's Journal"
-        description="I share engaging stories filled with copywriting lessons"
+        title="Copy That Sparks Emotions"
+        description="I share engaging stories filled with copywriting lessons "
         openGraph={{
           type: "website",
           locale: "en_IE",
           url: "https://kristof.vercel.app/",
-          siteName: "Kristof's Journal",
+          siteName: "Copy That Sparks Emotions",
         }}
         twitter={{
           handle: "@kristf_nemeth",
