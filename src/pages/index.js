@@ -23,9 +23,7 @@ export default function Home() {
             <div className="holder">
               <span>Get My Emails</span>
               <div>And a free gift...</div>
-              <Link href="/subscribe" target="_blank">
-                Subscribe
-              </Link>
+              <Link href="/subscribe">Subscribe</Link>
             </div>
           </div>
         </section>
@@ -46,7 +44,7 @@ export default function Home() {
           <div className="sub-holder">
             <span>Get My Emails</span>
             <div>And a free gift...</div>
-            <Link className="blck-sub-btn" href="/subscribe" target="_blank">
+            <Link className="blck-sub-btn" href="/subscribe">
               Subscribe
             </Link>
           </div>

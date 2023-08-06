@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import me from "../../public/me.jpg";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 const subscribe = () => {
   return (
