@@ -28,18 +28,21 @@ const subscribe = () => {
         <section className="text-sec">
           <h1>Copy That Sparks Emotions</h1>
           <h3>
-            Subscribe to my email list, where I share engaging stories filled
-            with copywriting lessons
+            Subscribe to my email list, where I simplify copywriting so it
+            doesn&apos;t leave you feeling mind numb
           </h3>
           <p>✅Free copywriting and marketing tips</p>
           <p>✅Resources that are exclusive to my list</p>
           <p>✅Stories from my life...</p>
           <h4>Plus:</h4>
-          <p>Get a free gift from me.</p>
+          <p>
+            Get a free gift from me that will teach you how to get your first
+            copywriting client
+          </p>
           <h4>Note:</h4>
           <p>
             If you don&apos;t get a welcome email, please check your Spam and/or
-            Promotions folders.
+            Promotions folders
           </p>
           {/* <Link
           href="https://kristofs-newsletter-8353d2.beehiiv.com/subscribe"
