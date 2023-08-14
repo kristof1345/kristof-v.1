@@ -3,6 +3,7 @@ import Image from "next/image";
 import me from "../../public/me.jpg";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import Script from "next/script";
 
 const subscribe = () => {
   return (
@@ -50,7 +51,7 @@ const subscribe = () => {
         >
           Suscribe
         </Link> */}
-          <iframe
+          {/* <iframe
             src="https://embeds.beehiiv.com/cee325e0-9382-4e37-975e-2bab94da0abd?slim=true"
             data-test-id="beehiiv-embed"
             height={52}
@@ -62,10 +63,16 @@ const subscribe = () => {
               borderRadius: "0px !important",
               backgroundColor: "transparent",
             }}
+          /> */}
+          <Script
+            className="fucker"
+            async
+            data-uid="867da82831"
+            src="https://kristof-3.ck.page/867da82831/index.js"
           />
-          <span className="respect">
+          {/* <span className="respect">
             We respect your privacy. Unsubscribe any time.
-          </span>
+          </span> */}
         </section>
       </div>
     </>
