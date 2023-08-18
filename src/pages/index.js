@@ -1,11 +1,13 @@
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import Image from "next/image";
+import ArticelNo1 from "../../public/article-no1.png";
 
 export default function Home() {
   return (
     <>
       <NextSeo
-        title="Kristof - Copy That Sparks Emotions"
+        title="Copy That Sparks Emotions"
         description="I share engaging stories filled with copywriting lessons"
         canonical="https://kristof.vercel.app/"
         openGraph={{
@@ -15,15 +17,14 @@ export default function Home() {
       <main className="index-main">
         <section className="welcomer">
           <div>
-            <h1>
-              Copy That Sparks<span> Emotions</span>
-            </h1>
-            {/* <p>I Write About Copywriting</p> */}
+            <h1>Learn Copywriting</h1>
+            <p>Short articles about copywriting, marketing and persuasion</p>
             <hr className="divider" />
             <div className="holder">
-              <span>Get My Emails</span>
-              <div>And a free gift...</div>
-              <Link href="/subscribe">Subscribe</Link>
+              <span>Join 10+ Subscribers</span>
+              <Link href="/subscribe" className="sub-btn">
+                Subscribe
+              </Link>
             </div>
           </div>
         </section>
@@ -31,10 +32,42 @@ export default function Home() {
           <h2>Recent Articles</h2>
           <div className="recent-holder">
             <article>
-              <Link
-                href="/articles/this-is-what-copy-turned-into"
-                className="lightlogo"
-              >
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticelNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticelNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticelNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
                 <h4>This is what copy turned into?</h4>
                 <div>321 words</div>
                 <span>Aug 1, 2023</span>
@@ -42,9 +75,8 @@ export default function Home() {
             </article>
           </div>
           <div className="sub-holder">
-            <span>Get My Emails</span>
-            <div>And a free gift...</div>
-            <Link className="blck-sub-btn" href="/subscribe">
+            <span>Join 10+ Subscribers</span>
+            <Link className="sub-btn" href="/subscribe">
               Subscribe
             </Link>
           </div>

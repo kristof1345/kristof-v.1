@@ -14,7 +14,7 @@ export default function Header() {
   }, [router]);
 
   return (
-    <header className={router.pathname === "/" ? "blc-header" : ""}>
+    <header>
       <Link href="/">
         <h2 className="logo">Kristof</h2>
       </Link>

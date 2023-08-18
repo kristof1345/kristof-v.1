@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
+import ArticleNo1 from "../../public/article-no1.png";
 
 export default function Articles() {
   return (
@@ -16,22 +18,92 @@ export default function Articles() {
       <main className={`articles-main`}>
         <h1>Article&apos;s</h1>
         <div className="articles-holder">
-          <div className="grad-top" />
-          <div className="grad-bottom" />
           <div className="articles">
             <article>
-              <div className="article-content">
-                <div className="timeline"></div>
-                <div>
-                  Aug 1, 2023<span className="dot"></span>321 Words
-                </div>
-                <Link
-                  href="/articles/this-is-what-copy-turned-into"
-                  className="lightlogo"
-                >
-                  <h4>This is what copy turned into?</h4>
-                </Link>
-              </div>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+          </div>
+          <div className="articles">
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
+            </article>
+            <article>
+              <Link href="/articles/this-is-what-copy-turned-into">
+                <Image
+                  className="article-cover"
+                  src={ArticleNo1.src}
+                  width={300}
+                  height={300}
+                  alt="Article cover"
+                />
+                <h4>This is what copy turned into?</h4>
+                <div>321 words</div>
+                <span>Aug 1, 2023</span>
+              </Link>
             </article>
           </div>
         </div>

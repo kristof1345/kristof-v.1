@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
       />
       <Header />
       <Component {...pageProps} />
-      {router.pathname === "/subscribe" ? <></> : <Footer />}
+      <Footer />
     </>
   );
 }

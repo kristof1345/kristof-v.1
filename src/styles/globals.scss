@@ -56,11 +56,7 @@ $noto: "Noto Serif", serif;
   opacity: 0;
 }
 
-.lightlogo {
-  color: #000000;
-}
-
-.blck-sub-btn {
+.sub-btn {
   background-color: #ffde59;
   text-decoration: none;
   color: black;
@@ -69,41 +65,11 @@ $noto: "Noto Serif", serif;
   padding: 16px 55px;
   border-radius: 2px;
   border: 2px solid #ffde59;
-  width: min-content;
 }
 
-.blck-sub-btn:hover {
+.sub-btn:hover {
   background-color: transparent;
   color: #ffde59;
-}
-
-.divider {
-  border: none;
-  border-top: 0.5px dashed #d2d1d1;
-  margin-bottom: 12px;
-}
-
-body {
-  background-color: white;
-  height: 100vh;
-}
-
-.blc-header {
-  background-color: #000000;
-
-  .logo {
-    color: #ffffff;
-  }
-
-  nav {
-    .toggle {
-      color: white;
-    }
-  }
-
-  a {
-    color: #ffffff;
-  }
 }
 
 header {
@@ -133,6 +99,11 @@ header {
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0.03em;
+
+    span {
+      font-family: $noto;
+      font-size: 1rem;
+    }
   }
 
   h2:hover {
@@ -161,30 +132,15 @@ header {
     }
   }
 
-  .theme-toggle {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.3rem;
-  }
-
   .dropdown {
     display: none;
   }
 }
 
 .index-main {
-  display: flex;
-  flex-direction: column;
-  // flex: 1 1 auto;
-
   .welcomer {
-    background-color: #000000;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 150px;
+    margin-top: 100px;
+    padding: 20px 150px 80px 150px;
     padding-top: 0px;
 
     div {
@@ -196,83 +152,53 @@ header {
         margin-top: 40px;
         text-align: center;
         font-family: $noto;
-        font-size: 5.6vw;
+        font-size: 6.4vw;
         font-weight: 800;
         letter-spacing: 1.5px;
-        color: #ffffff;
-        // background: -webkit-linear-gradient(#c7c7c7, #ffffff);
-        // -webkit-background-clip: text;
-        // background-clip: text;
-        // -webkit-text-fill-color: transparent;
+        color: #000000;
         span {
           font-family: $noto;
-          color: #ffde59;
+          color: #ffde59; //#ffde59
         }
       }
 
       p {
         text-align: center;
         max-width: 900px;
-        color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 400;
-        padding: 15px 0 20px 0;
+        padding: 20px 0;
       }
 
       .divider {
-        width: 15%;
-        height: 1px;
-        border-top: 2px solid #b5b5b5;
-        margin: 25px 0 15px 0;
+        width: 150px;
+        border: none;
+        border-top: 2px dotted #000000;
+        margin: 15px 0 10px 0;
       }
 
       .holder {
-        padding: 20px 0 0 0;
         display: flex;
         max-width: 800px;
         gap: 1px;
 
-        div {
-          color: #b5b5b5;
-          font-size: 0.85rem;
-          padding-bottom: 15px;
-        }
-
         span {
-          color: #ffffff;
-          font-size: 1.3rem;
-        }
-
-        a {
-          background-color: #ffde59;
-          text-decoration: none;
-          color: black;
-          // font-family: $noto;
-          // letter-spacing: 1px;
-          font-weight: 700;
-          font-size: 1.5rem;
-          padding: 16px 55px;
-          border-radius: 2px;
-          border: 2px solid #ffde59;
-        }
-
-        a:hover {
-          background-color: transparent;
-          color: #ffde59;
+          color: #000000;
+          font-size: 1.25rem;
+          padding: 20px 0 20px 0;
         }
       }
     }
   }
 
   .recent-articles {
-    padding: 90px 250px 40px 250px;
+    padding: 0px 200px 40px 200px;
     text-align: center;
 
     h2 {
       font-size: 4rem;
       font-family: $noto;
       margin-bottom: 90px;
-      // letter-spacing: 2px;
     }
 
     .sub-holder {
@@ -282,15 +208,10 @@ header {
       align-items: center;
       gap: 1px;
 
-      div {
-        color: #1f1e1e;
-        font-size: 0.85rem;
-        padding-bottom: 15px;
-      }
-
       span {
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 20px 0 20px 0;
       }
     }
 
@@ -306,6 +227,21 @@ header {
           text-align: left;
           width: 95%;
           text-decoration: none;
+          color: #000000;
+
+          .article-cover {
+            width: 100%;
+            max-width: 250px;
+            height: 100%;
+            max-height: 250px;
+            margin-bottom: 15px;
+            border: 3px solid black;
+          }
+
+          .article-cover:hover {
+            box-shadow: 7px 7px 0px #000000;
+          }
+
           h4 {
             font-size: 1.2rem;
           }
@@ -346,7 +282,7 @@ header {
 
 .articles-main {
   flex: 1 1 auto;
-  padding: 100px 20px 0 20px;
+  padding: 100px 200px 30px 200px;
 
   h1 {
     text-align: center;
@@ -356,85 +292,50 @@ header {
   }
 
   .articles-holder {
-    margin: auto;
-    margin-top: 35px;
-    max-width: 800px;
-    padding: 40px 0 10px 0;
-    border-left: 3.5px solid #000000; //#414141
-    position: relative;
-
-    .grad-top {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -4px;
-      width: 4px;
-      height: 40px;
-      background-image: linear-gradient(
-        to top,
-        rgba(255, 0, 0, 0),
-        rgba(255, 255, 255, 1)
-      );
-    }
-    .grad-bottom {
-      position: absolute;
-      bottom: 0;
-      left: -4px;
-      width: 4px;
-      height: 30px;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(255, 0, 0, 0),
-        rgba(255, 255, 255, 1)
-      );
-    }
+    margin-top: 60px;
+    margin-bottom: 40px;
 
     .articles {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
       article {
-        margin: 0 0 30px 0;
-        padding: 0 0 5px 40px;
-        position: relative;
-        .article-content {
+        flex-basis: 33%;
+
+        a {
+          display: block;
+          text-align: left;
+          width: 95%;
+          text-decoration: none;
+          color: #000000;
+
+          .article-cover {
+            width: 100%;
+            max-width: 250px;
+            height: 100%;
+            max-height: 250px;
+            margin-bottom: 15px;
+            border: 3px solid black;
+          }
+
+          .article-cover:hover {
+            box-shadow: 7px 7px 0px #000000;
+          }
+
+          h4 {
+            font-size: 1.2rem;
+          }
+          h4:hover {
+            opacity: 0.5;
+          }
+
           div {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 1rem;
-            margin-bottom: 2px;
-            font-weight: 500;
+            padding: 12px 0 8px 0;
+          }
+
+          span {
             opacity: 0.7;
-
-            .dot {
-              background-color: #000000;
-              display: inline-block;
-              width: 4px;
-              margin-top: 1px;
-              height: 4px;
-              border-radius: 100%;
-            }
-          }
-          .timeline {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 999px;
-            top: -4px;
-            left: -13.5px;
-            opacity: 1;
-            background: #000000;
-            border: 5px solid white;
-          }
-
-          a {
-            display: block;
-            text-decoration: none;
-            h4 {
-              font-size: 1.6rem;
-              margin-bottom: 3px;
-            }
-            h4:hover {
-              opacity: 0.5;
-            }
           }
         }
       }
@@ -571,13 +472,6 @@ header {
       padding-bottom: 8px;
     }
 
-    .respect {
-      display: block;
-      text-align: center;
-      padding-top: 5px;
-      font-size: 0.8rem;
-    }
-
     .sub-sub {
       background-color: #000000;
       text-decoration: none;
@@ -661,7 +555,7 @@ footer {
     }
 
     .recent-articles {
-      padding: 80px 25px 10px 25px;
+      padding: 0px 25px 10px 25px;
 
       h2 {
         font-size: 6.3vw;
@@ -684,16 +578,16 @@ footer {
       }
     }
   }
+
+  .articles-main {
+    padding: 100px 25px 0 25px;
+  }
 }
 
 @media (max-width: 600px) {
   .back-to-top {
     bottom: 17px;
     right: 17px;
-  }
-
-  .divider {
-    width: 90%;
   }
 
   header {
@@ -727,11 +621,9 @@ footer {
       right: 0;
       left: 0;
       z-index: -20;
-      // transform: translate(0, -500px);
       transform: translate(0, 65px);
       height: 0px;
       opacity: 0;
-      // transition: all 1000ms ease-in-out;
 
       nav {
         display: none;
@@ -754,20 +646,17 @@ footer {
         }
       }
     }
-
-    .theme-toggle {
-      flex-basis: 5%;
-    }
   }
 
   .index-main {
     .welcomer {
-      padding: 0 5px;
+      padding: 0px 5px 0 5px;
 
-      div {
+      .some {
+        padding-top: 20px;
         h1 {
-          font-size: 9.5vw;
-          margin-top: 5px;
+          font-size: 13vw;
+          margin-top: 20px;
           margin-bottom: 20px;
         }
 
@@ -778,7 +667,7 @@ footer {
       }
     }
     .recent-articles {
-      padding: 80px 20px 10px 20px;
+      padding: 70px 20px 10px 20px;
 
       h2 {
         font-size: 2.3rem;
@@ -790,7 +679,10 @@ footer {
         gap: 40px;
         align-items: center;
         article {
-          width: 80%;
+          a {
+            text-align: center;
+            width: 100%;
+          }
         }
       }
 
@@ -805,21 +697,14 @@ footer {
       font-size: 13vw;
     }
     .articles-holder {
-      padding: 35px 0 10px 0;
-
       .articles {
+        flex-direction: column;
+        gap: 30px;
+
         article {
-          padding: 0 0 5px 20px;
-          .article-content {
-            div {
-              font-size: 3.5vw;
-            }
-            a {
-              width: 100%;
-              h4 {
-                font-size: 5vw;
-              }
-            }
+          a {
+            text-align: center;
+            width: 100%;
           }
         }
       }
@@ -865,10 +750,6 @@ footer {
 }
 
 @media (max-width: 340px) {
-  .blck-sub-btn {
-    font-size: 1.25rem;
-  }
-
   header {
     padding: 0 10px;
     border: none;
@@ -925,7 +806,7 @@ footer {
     }
 
     .recent-articles {
-      padding: 60px 15px 10px 15px;
+      padding: 70px 15px 10px 15px;
 
       .sub-holder {
         padding: 75px 0 85px 0;
