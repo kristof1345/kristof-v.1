@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import "@/styles/globals.scss";
-import { useState } from "react";
 import Footer from "./components/Footer";
 import { DefaultSeo } from "next-seo";
 import relImage from "../../public/K.png";
@@ -35,7 +34,7 @@ export default function App({ Component, pageProps }) {
       />
       <Header />
       <Component {...pageProps} />
-      <Footer />
+      {router.pathname === "/subscribe" ? <></> : <Footer />}
     </>
   );
 }

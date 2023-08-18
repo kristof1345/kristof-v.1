@@ -1,6 +1,8 @@
 import { NextSeo } from "next-seo";
 import ScrollToTop from "../components/ScrollToTop";
 import Link from "next/link";
+import Image from "next/image";
+import ArticleNo1 from "../../../public/article-no1.png";
 
 const thisIsWhatCopyTurnedInto = () => {
   return (
@@ -34,6 +36,19 @@ const thisIsWhatCopyTurnedInto = () => {
               I wanted to check out the copy of the website, but something
               caught my eye.
             </p>
+            <div className="cover-image-holder">
+              <Image
+                className="article-cover"
+                src={ArticleNo1.src}
+                width={300}
+                height={300}
+                alt="Article cover"
+              />
+              <div>
+                <Link href="/subscribe">Subscribe to my list</Link> to not miss
+                another article
+              </div>
+            </div>
             <p>There was a course on copywriting.</p>
             <p>&quot;Pen to Profit&quot;</p>
             <p>Hmm, pretty good name.</p>
@@ -127,12 +142,8 @@ const thisIsWhatCopyTurnedInto = () => {
             </div>
           </section>
           <div className="sub-holder">
-            <span>Get My Emails</span>
-            <Link
-              className="blck-sub-btn"
-              href="https://kristof-3.ck.page/27225f2782"
-              target="_blank"
-            >
+            <span>Join 10+ Subscribers</span>
+            <Link className="sub-btn" href="/subscribe">
               Subscribe
             </Link>
           </div>

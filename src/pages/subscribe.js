@@ -29,8 +29,8 @@ const subscribe = () => {
         <section className="text-sec">
           <h1>Copy That Sparks Emotions</h1>
           <h3>
-            Subscribe to my email list, where I simplify copywriting so it
-            doesn&apos;t leave you feeling mind numb
+            I share simplified copywriting lessons that doens&apos;t leave you
+            feeling like a mind numb
           </h3>
           <p>✅Free copywriting and marketing tips</p>
           <p>✅Resources that are exclusive to my list</p>
@@ -45,12 +45,6 @@ const subscribe = () => {
             If you don&apos;t get a welcome email, please check your Spam and/or
             Promotions folders
           </p>
-          {/* <Link
-          href="https://kristofs-newsletter-8353d2.beehiiv.com/subscribe"
-          className="sub-sub"
-        >
-          Suscribe
-        </Link> */}
           <iframe
             src="https://embeds.beehiiv.com/cee325e0-9382-4e37-975e-2bab94da0abd?slim=true"
             data-test-id="beehiiv-embed"
@@ -58,14 +52,14 @@ const subscribe = () => {
             frameBorder={0}
             scrolling="no"
             style={{
-              margin: "20px 0 0 0",
+              margin: "30px 0 0 0",
               width: "100%",
               borderRadius: "0px !important",
               backgroundColor: "transparent",
             }}
           />
           <span className="respect">
-            We respect your privacy. Unsubscribe any time.
+            I respect your privacy. Unsubscribe any time.
           </span>
         </section>
       </div>

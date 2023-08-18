@@ -16,7 +16,7 @@ export default function Home() {
       />
       <main className="index-main">
         <section className="welcomer">
-          <div>
+          <div className="some">
             <h1>Learn Copywriting</h1>
             <p>Short articles about copywriting, marketing and persuasion</p>
             <hr className="divider" />
@@ -45,34 +45,6 @@ export default function Home() {
                 <span>Aug 1, 2023</span>
               </Link>
             </article>
-            <article>
-              <Link href="/articles/this-is-what-copy-turned-into">
-                <Image
-                  className="article-cover"
-                  src={ArticelNo1.src}
-                  width={300}
-                  height={300}
-                  alt="Article cover"
-                />
-                <h4>This is what copy turned into?</h4>
-                <div>321 words</div>
-                <span>Aug 1, 2023</span>
-              </Link>
-            </article>
-            <article>
-              <Link href="/articles/this-is-what-copy-turned-into">
-                <Image
-                  className="article-cover"
-                  src={ArticelNo1.src}
-                  width={300}
-                  height={300}
-                  alt="Article cover"
-                />
-                <h4>This is what copy turned into?</h4>
-                <div>321 words</div>
-                <span>Aug 1, 2023</span>
-              </Link>
-            </article>
           </div>
           <div className="sub-holder">
             <span>Join 10+ Subscribers</span>
@@ -80,21 +52,6 @@ export default function Home() {
               Subscribe
             </Link>
           </div>
-          {/* <div className="recent-holder">
-            <article>
-              <Link
-                href="/articles/the-struggles-of-becoming-a-self-taught-developer"
-                className="lightlogo"
-              >
-                <h4>The struggles of becoming a self thaught developer</h4>
-                <div>375 Words</div>
-                <span>Jul 11, 2023</span>
-              </Link>
-            </article>
-          </div> */}
-          {/* <Link href="/articles" className="read-more">
-            Read More Articles
-          </Link> */}
         </section>
       </main>
     </>
