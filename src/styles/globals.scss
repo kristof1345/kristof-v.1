@@ -1,16 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;300;400;500;600;700;800;900&display=swap");
 
-$rale: raleway, system-ui;
-$mont: "Montserrat", sans-serif;
-$merri: "Merriweather", serif;
 $arial: Arial, Helvetica, sans-serif;
-$lato: "Lato", sans-serif;
 $noto: "Noto Serif", serif;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: $lato;
+  font-family: $arial;
   transition: 200ms ease-in-out;
 }
 
@@ -333,7 +329,6 @@ header {
             height: 100%;
             max-height: 250px;
             margin-bottom: 15px;
-            border: 3px solid black;
           }
 
           .article-cover:hover {

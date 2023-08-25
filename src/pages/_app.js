@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import "@/styles/globals.scss";
+import "@/styles/globals2.scss";
 import Footer from "./components/Footer";
 import { DefaultSeo } from "next-seo";
 import relImage from "../../public/K.png";
@@ -32,9 +33,14 @@ export default function App({ Component, pageProps }) {
           },
         ]}
       />
-      <Header />
+      {router.pathname === "/copy-clients" ? <></> : <Header />}
       <Component {...pageProps} />
-      {router.pathname === "/subscribe" ? <></> : <Footer />}
+      {router.pathname === "/subscribe" ||
+      router.pathname === "/copy-clients" ? (
+        <></>
+      ) : (
+        <Footer />
+      )}
     </>
   );
 }
