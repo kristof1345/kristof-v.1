@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import me from "../../public/me.jpg";
 import { NextSeo } from "next-seo";
-import Link from "next/link";
-import Script from "next/script";
 
 const subscribe = () => {
   return (
@@ -29,12 +27,17 @@ const subscribe = () => {
         <section className="text-sec">
           <h1>Copy That Sparks Emotions</h1>
           <h3>
-            I share simplified copywriting lessons that doens&apos;t leave you
-            feeling like a mind numb
+            I build Email List&apos;s and Sales Pages for brands and share the
+            stories and lessons here.
           </h3>
-          <p>✅Free copywriting and marketing tips</p>
-          <p>✅Resources that are exclusive to my list</p>
-          <p>✅Stories from my life...</p>
+          <p>✅Crazy stories from my life.</p>
+          <p>✅A secret method for getting clients.</p>
+          <p>✅Resources that are exclusive to my list.</p>
+          <p>✅Free copywriting lessons so good you lick your fingers.</p>
+          <p>
+            ✅How I got my first ever copywriting client - and how you can learn
+            from my mistakes.
+          </p>
           <h4>Plus:</h4>
           <p>
             Get a free gift from me that will teach you how to get your first
