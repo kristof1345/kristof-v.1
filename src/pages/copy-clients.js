@@ -26,7 +26,7 @@ const copyClients = () => {
             <Link href="#opt-in" className="but">
               Get It For FREE
             </Link>
-            <h3>What you&apos;ll learn...</h3>
+            <h3>You&apos;ll learn...</h3>
             <div className="ul-holder">
               <ul>
                 <li className="b">
