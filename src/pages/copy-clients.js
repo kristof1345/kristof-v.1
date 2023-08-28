@@ -21,7 +21,7 @@ const copyClients = () => {
       <div className="copy-clients-main">
         <div className="field">
           <h1>Get your first copywriting client…</h1>
-          <h2>Without sending 1000s of cold DMs a day.</h2>
+          <h2>Without sending 100s of cold DMs a day.</h2>
           <section className="text-sec">
             <Link href="#opt-in" className="but">
               Get It For FREE
