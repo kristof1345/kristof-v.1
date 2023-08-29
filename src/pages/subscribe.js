@@ -31,13 +31,10 @@ const subscribe = () => {
             stories and lessons here.
           </h3>
           <p>✅Crazy stories from my life.</p>
-          <p>✅A secret method for getting clients.</p>
           <p>✅Resources that are exclusive to my list.</p>
-          <p>✅Free copywriting lessons so good you lick your fingers.</p>
-          <p>
-            ✅How I got my first ever copywriting client - and how you can learn
-            from my mistakes.
-          </p>
+          <p>✅Free copywriting tips so good you lick your fingers.</p>
+          <p>✅Various methods that helped me with client acquisition.</p>
+          <p>✅Okay. Mostly just stories from my life as a copywriter...</p>
           <h4>Plus:</h4>
           <p>
             Get a free gift from me that will teach you how to get your first
